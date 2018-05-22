@@ -1924,7 +1924,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4275ff;
+  background: #6affbb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2805,4 +2805,32 @@ a:hover {
 }
 a:hover {
   cursor: url("/images/cursor2.ico"), auto !important;
+}
+.posts-expand .post-tags a {
+  border-bottom: none;
+  margin-right: 0px;
+  font-size: 13px;
+  padding: 0px 5px;
+  border-radius: 3px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.posts-expand .post-tags a:hover {
+  background: #eee;
+}
+.out-img-topic {
+  display: block;
+  max-height: 300px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+img.img-topic {
+  width: 100%;
+  display: block;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
 }
