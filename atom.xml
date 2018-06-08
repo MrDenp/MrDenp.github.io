@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-21T09:54:50.007Z</updated>
+  <updated>2018-06-08T03:11:33.368Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/05/21/hello-world/"/>
-    <id>http://yoursite.com/2018/05/21/hello-world/</id>
-    <published>2018-05-21T09:54:50.006Z</published>
-    <updated>2018-05-21T09:54:50.007Z</updated>
+    <title>AMD - 异步模块定义</title>
+    <link href="http://yoursite.com/2018/06/08/hello-world/"/>
+    <id>http://yoursite.com/2018/06/08/hello-world/</id>
+    <published>2018-06-08T03:11:33.366Z</published>
+    <updated>2018-06-08T03:11:33.368Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;AMD&lt;/code&gt; 是”Asynchronous Module Definition”的缩写,意思就是”&lt;code&gt;异步模块定义&lt;/code&gt;“.它采用异步方式加载模块,模块的加载不会影响它后面程序语句的运行.所有依赖这个模块的语句,都定义在一个回调函数中,等到加载完成之后这个回调函数才会运行.&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
-      <category term="第一篇文章" scheme="http://yoursite.com/categories/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <category term="模块化" scheme="http://yoursite.com/categories/%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
     
     
       <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="异步" scheme="http://yoursite.com/tags/%E5%BC%82%E6%AD%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序 从零开始了解微信小程序的开发（一）</title>
+    <link href="http://yoursite.com/2018/06/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BA%86%E8%A7%A3%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/06/06/微信小程序-从零开始了解微信小程序的开发（一）/</id>
+    <published>2018-06-06T07:12:05.000Z</published>
+    <updated>2018-06-06T07:12:51.229Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+      
+    
+    </summary>
+    
+      <category term="微信" scheme="http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何去理解 区块链</title>
+    <link href="http://yoursite.com/2018/05/29/blockchain/"/>
+    <id>http://yoursite.com/2018/05/29/blockchain/</id>
+    <published>2018-05-29T01:45:18.000Z</published>
+    <updated>2018-05-29T01:49:30.434Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;什么是区块链&quot;&gt;&lt;a href=&quot;#什么是区块链&quot; class=&quot;headerlink&quot; title=&quot;什么是区块链&quot;&gt;&lt;/a&gt;什么是区块链&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="区块链" scheme="http://yoursite.com/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
