@@ -67,14 +67,33 @@
     <link href="http://yoursite.com/2018/06/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BA%86%E8%A7%A3%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2018/06/06/微信小程序-从零开始了解微信小程序的开发（一）/</id>
     <published>2018-06-06T07:12:05.000Z</published>
-    <updated>2018-06-08T03:59:40.519Z</updated>
+    <updated>2018-06-08T09:59:13.904Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-      
+      &lt;blockquote&gt;
+&lt;p&gt;摘要：记录这个一是帮助更多从零开始的开发小白可以通俗易懂的了解小程序开发，另外一个目的就是对小程序开发从零开始总结梳理一下，帮助别人的同时提升自己。（ps - 在总结中成长，不论是任何行业都适用的一句真言。）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;微信小程序&quot;&gt;&lt;a href=&quot;#微信小程序&quot; class=&quot;headerlink&quot; title=&quot;微信小程序&quot;&gt;&lt;/a&gt;微信小程序&lt;/h1&gt;&lt;h2 id=&quot;框架部分&quot;&gt;&lt;a href=&quot;#框架部分&quot; class=&quot;headerlink&quot; title=&quot;框架部分&quot;&gt;&lt;/a&gt;框架部分&lt;/h2&gt;&lt;h3 id=&quot;目录结构&quot;&gt;&lt;a href=&quot;#目录结构&quot; class=&quot;headerlink&quot; title=&quot;目录结构&quot;&gt;&lt;/a&gt;目录结构&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;pages&lt;/code&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;index&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;index.wxml&lt;/li&gt;
+&lt;li&gt;index.wxss&lt;/li&gt;
+&lt;li&gt;index.js&lt;br&gt;&lt;code&gt;logs&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;app.js&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;app.json&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;app.wxss&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     

@@ -27,7 +27,7 @@
   <entry>
     <title><![CDATA[微信小程序 从零开始了解微信小程序的开发（一）]]></title>
     <url>%2F2018%2F06%2F06%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BA%86%E8%A7%A3%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[摘要：记录这个一是帮助更多从零开始的开发小白可以通俗易懂的了解小程序开发，另外一个目的就是对小程序开发从零开始总结梳理一下，帮助别人的同时提升自己。（ps - 在总结中成长，不论是任何行业都适用的一句真言。） 微信小程序框架部分目录结构 pages index index.wxml index.wxss index.jslogs app.js app.json app.wxss 配置 app.json pages 接受一个数组，每一项都是字符串，来指定小程序由哪些页面组成。每一项代表对应页面的【路径+文件名】信息，数组的第一项代表小程序的初始页面。小程序中新增/减少页面，都需要对 pages 数组进行修改。 123456&#123; &quot;pages&quot;:[ &quot;pages/index/index&quot;, &quot;pages/logs/logs&quot; ]&#125; window 123456789&#123; &quot;window&quot;:&#123; &quot;navigationBarBackgroundColor&quot;: &quot;#ffffff&quot;, &quot;navigationBarTextStyle&quot;: &quot;black&quot;, &quot;navigationBarTitleText&quot;: &quot;微信接口功能演示&quot;, &quot;backgroundColor&quot;: &quot;#eeeeee&quot;, &quot;backgroundTextStyle&quot;: &quot;light&quot; &#125;&#125; tabBar networkTimeout debug 框架逻辑层视图层自定义组件插件性能优化]]></content>
       <categories>
         <category>微信</category>
       </categories>
