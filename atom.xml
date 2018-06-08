@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-08T03:26:21.339Z</updated>
+  <updated>2018-06-08T06:35:18.639Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&#39;拉一个节约开发时间的库和资源&#39;</title>
+    <link href="http://yoursite.com/2018/06/08/%E6%8B%89%E4%B8%80%E4%B8%AA%E8%8A%82%E7%BA%A6%E5%BC%80%E5%8F%91%E6%97%B6%E9%97%B4%E7%9A%84%E5%BA%93%E5%92%8C%E8%B5%84%E6%BA%90/"/>
+    <id>http://yoursite.com/2018/06/08/拉一个节约开发时间的库和资源/</id>
+    <published>2018-06-08T06:26:00.000Z</published>
+    <updated>2018-06-08T06:35:18.639Z</updated>
+    
+    <summary type="html">
+    
+      节约 Web 开发时间的62个工具、库和资源
+    
+    </summary>
+    
+      <category term="节约开发时间成本的资源清单" scheme="http://yoursite.com/categories/%E8%8A%82%E7%BA%A6%E5%BC%80%E5%8F%91%E6%97%B6%E9%97%B4%E6%88%90%E6%9C%AC%E7%9A%84%E8%B5%84%E6%BA%90%E6%B8%85%E5%8D%95/"/>
+    
+    
+      <category term="js库" scheme="http://yoursite.com/tags/js%E5%BA%93/"/>
+    
+      <category term="css 库" scheme="http://yoursite.com/tags/css-%E5%BA%93/"/>
+    
+  </entry>
   
   <entry>
     <title>AMD - 异步模块定义</title>
@@ -45,7 +67,7 @@
     <link href="http://yoursite.com/2018/06/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BA%86%E8%A7%A3%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2018/06/06/微信小程序-从零开始了解微信小程序的开发（一）/</id>
     <published>2018-06-06T07:12:05.000Z</published>
-    <updated>2018-06-06T07:12:51.229Z</updated>
+    <updated>2018-06-08T03:59:40.519Z</updated>
     
     <summary type="html">
     
@@ -58,6 +80,14 @@
     
       <category term="微信" scheme="http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1/"/>
     
+    
+      <category term="小程序" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+      <category term="项目目录结构" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="项目配置" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="框架" scheme="http://yoursite.com/tags/%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA['拉一个节约开发时间的库和资源']]></title>
+    <url>%2F2018%2F06%2F08%2F%E6%8B%89%E4%B8%80%E4%B8%AA%E8%8A%82%E7%BA%A6%E5%BC%80%E5%8F%91%E6%97%B6%E9%97%B4%E7%9A%84%E5%BA%93%E5%92%8C%E8%B5%84%E6%BA%90%2F</url>
+    <content type="text"><![CDATA[JavaScript 库Particles.js 在网页上创建炫酷的漂浮例子的库，在网站首页比较常见。 Three.js 在网页上创建 3D 对象和空间的库，常用于网页游戏。 Fullpage.js 轻松创建全屏滚动的网页。 Typed.js 实现打字机的效果。 Waypoints.js 实现滚动一个元素触发一个函数的最简单的方式。 Highlight.js 自动检测语言及高亮语法。 Chart.js 纯 JavaScript 实现炫酷图表。 Instantclick 大大提升网页加载效率，在鼠标悬停时预加载资源。 Chartist 另一个图表库。 Motio 实现基于 sprite 的动画和平移效果的库。 Animstion css 动画页面切换效果的 JQuery 插件 Barba.js 流畅和平滑的页面过渡效果。 TwentyTwenty 一个视觉差异工具，突出两个图像之间的差异。 Vivus.js 用于在 SVG 上绘制动画的库。 Wow.js 滚动时显示动画。 Scrolline.js 显示页面的滚动进度条。 Velocity.js 快速、平滑的 JavaScript 动画。 Animate on scroll 另一个滚动显示动画的库。 Handlebars.js —— JavaScript 模版。 jInvertScroll —— 轻量级的水平视差插件。 One page scroll —— 与 FullPage 类似。 Parallax.js —— 视觉引擎，对智能设备的方向做出反应。 Typeahead.js —— 自动匹配搜索。 Dragdealer.js —— 相当酷的实现拖动效果的库。 Bounce.js —— 创建炫酷的 CSS3 动画。 Pagepiling.js —— 又一个 one page scroll. Multiscroll.js —— 实现多列滚动面板效果。 Favico.js —— 动态图标。 Midnight.js —— 无缝切换固定标题。 Anime.js —— 动画库。 Keycode —— 获得按键的 JavaScript 键码。 Sortable —— 拖动排序控件。 Flexdatalist —— 输入补全。 Slideout.js —— 在网页上实现抽屉效果的侧边导航栏。 Jquerymy —— 使用 jquery 的两种数据绑定方式。 Cleave.js —— 格式化输入内容。 Page —— 小型客户端路由库。 Selectize.js —— 用于添加标签的选择框。 Nice select —— 用于创建奈斯型选择框。 Tether —— 可以有效地固定绝对定位的元素。 Shepherd.js —— 实现指导用户使用应用的效果。 Tooltip —— 提示信息。 Select2 —— 丰富的自定义选择框。 IziToast —— 容易实现的 JS 通知。 IziModal —— 容易实现的 JS 弹窗。 CSS 库／设计类Animate.css —— 动画库。 Flat UI Colors —— 简单有效的颜色。 Material design lite —— 基于 Google 的 Material Design。 Materialui.co —— 许多 Material Design 框架的资源。 Colorrrs —— 随机颜色生成器。 Section separators —— CSS 分割线。 Topcoat —— 简单快速的 CSS 框架。 Create ken burns effect —— 使用 CSS 动画的 Ken Burns 效果。 DynCSS —— 为 CSS 添加函数，让它变成动态的。 Magic animations —— 人如其名。 CSSpin —— CSS 旋转控件集合。 Feather icons —— 图标。 Ion icons —— 图标。 Font awesome —— 图标。 Font generator —— 组合多种字体，生成一个混合体。 On/Off switch —— 开关按钮。 UI Kit —— 轻型的模块化框架。 Bootstrap —— 这个就不谈了。 Foundation —— 号称最先进的响应式前端框架。]]></content>
+      <categories>
+        <category>节约开发时间成本的资源清单</category>
+      </categories>
+      <tags>
+        <tag>js库</tag>
+        <tag>css 库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[AMD - 异步模块定义]]></title>
     <url>%2F2018%2F06%2F08%2Fhello-world%2F</url>
     <content type="text"><![CDATA[AMD 是”Asynchronous Module Definition”的缩写,意思就是”异步模块定义“.它采用异步方式加载模块,模块的加载不会影响它后面程序语句的运行.所有依赖这个模块的语句,都定义在一个回调函数中,等到加载完成之后这个回调函数才会运行. AMD如何加载模块 AMD 也采用require()语句加载模块，但是不同于CommonJS，它要求两个参数：1require([module], callback); 第一个参数[module],是一个数组，数组元素就是需要依赖的加载模块,第二个参数是一个回调函数,这个回调函数在第一个参数中的模块加载成功之后才会执行.例如123require([&apos;math&apos;],function(math)&#123; math.add(2,3);&#125;) 注意 此时math.add()与math模块加载不是同步的,浏览器不会发生请求数据时的假死状态. require.js 之前文件中一次加载很多js文件的写法有很大的缺点,加载的时候,浏览器会停止网页渲染,所以加载的文件越多,网页失去响应的时间就会越长,由于js文件之间存在依赖关系,因此在依赖关系复杂的时候代码的而编写就会变得很困难. require JS 的诞生主要解决了两个问题 实现js文件的异步加载,避免网页失去响应; 管理模块之间的依赖性,便于代码的编写和维护; require.js 的加载 两种引入方式： 1.在文件头部引入时需要异步加载并且如要兼容IE则需要加defer 1&lt;script src=&quot;js/require.js&quot; defer async=&quot;true&quot; &gt;&lt;/script&gt; 2.在页面底部引入 引入require.js后就需要引入自己的js文件了 1&lt;script src=&quot;js/require.js&quot; data-main=&quot;js/main&quot;&gt;&lt;/script&gt; data-main 属性的作用是,指定网页程序的主模块.main.js会被require加载,由于require 默认的文件后缀是js,所以可以把main.js写成main1234567891011121314151617require.config(&#123; baseUrl: &quot;js/lib&quot;,//指定js加载的基目录 paths: &#123; &quot;jquery&quot;: &quot;jquery.min&quot;, &quot;underscore&quot;: &quot;underscore.min&quot;, &quot;backbone&quot;: &quot;backbone.min&quot; &#125;， shim:&#123;//这个属性是专门用来配置不兼容的模块1exports暴露出去的变量名称，deps数组表明该模块的依赖 &apos;jquery.scroll&apos;:&#123; deps:[&apos;jquery&apos;], exports:&apos;jQuery.fn.scroll&apos; &#125; &#125;&#125;);require([&apos;jquery&apos;,&apos;uderscore&apos;,&apos;backbone&apos;],function($,_,Backbone)&#123; &#125;)]]></content>
@@ -19,6 +31,12 @@
       <categories>
         <category>微信</category>
       </categories>
+      <tags>
+        <tag>小程序</tag>
+        <tag>项目目录结构</tag>
+        <tag>项目配置</tag>
+        <tag>框架</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[如何去理解 区块链]]></title>
