@@ -1924,7 +1924,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b3c49d;
+  background: #ffb3e7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2805,6 +2805,7 @@ blockquote {
   color: #666;
   border-left: 4px solid #69adfd;
   background: #f1f1f1;
+  border-radius: 6px;
 }
 .post {
   margin-bottom: 60px;
@@ -2854,6 +2855,12 @@ img.img-topic {
   padding: 0;
   float: right;
   clear: right;
+}
+.posts-expand .post-body img {
+  padding: 14px;
+  border: 1px solid #dac0c0;
+  box-shadow: 0 0 10px #fbd0d0;
+  border-radius: 20px;
 }
 .posts-expand .post-title-link::before {
   content: "";
