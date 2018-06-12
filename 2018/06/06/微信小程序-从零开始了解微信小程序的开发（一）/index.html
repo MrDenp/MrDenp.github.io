@@ -76,7 +76,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="MrDenp、blog |To Be a Better Me" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="MrDenp 的"宇宙"【-To Be a Better Me-】" type="application/atom+xml" />
 
 
 
@@ -88,11 +88,12 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信小程序 从零开始了解微信小程序的开发（一）">
 <meta property="og:url" content="http://yoursite.com/2018/06/06/微信小程序-从零开始了解微信小程序的开发（一）/index.html">
-<meta property="og:site_name" content="MrDenp、blog |To Be a Better Me">
+<meta property="og:site_name" content="MrDenp 的&quot;宇宙&quot;【-To Be a Better Me-】">
 <meta property="og:description" content="摘要：记录这个一是帮助更多从零开始的开发小白可以通俗易懂的了解小程序开发，另外一个目的就是对小程序开发从零开始总结梳理一下，帮助别人的同时提升自己。（ps - 在总结中成长，不论是任何行业都适用的一句真言。）">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/06/06/微信小程序-从零开始了解微信小程序的开发（一）/微信小程序-从零开始了解微信小程序的开发（一）/json_window.png">
-<meta property="og:updated_time" content="2018-06-08T10:03:46.399Z">
+<meta property="og:image" content="http://yoursite.com/2018/06/06/微信小程序-从零开始了解微信小程序的开发（一）/微信小程序-从零开始了解微信小程序的开发（一）/json_networkTimeout.png">
+<meta property="og:updated_time" content="2018-06-12T08:21:40.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序 从零开始了解微信小程序的开发（一）">
 <meta name="twitter:description" content="摘要：记录这个一是帮助更多从零开始的开发小白可以通俗易懂的了解小程序开发，另外一个目的就是对小程序开发从零开始总结梳理一下，帮助别人的同时提升自己。（ps - 在总结中成长，不论是任何行业都适用的一句真言。）">
@@ -132,7 +133,7 @@
 
 
 
-  <title>微信小程序 从零开始了解微信小程序的开发（一） | MrDenp、blog |To Be a Better Me</title>
+  <title>微信小程序 从零开始了解微信小程序的开发（一） | MrDenp 的"宇宙"【-To Be a Better Me-】</title>
   
 
 
@@ -164,7 +165,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">MrDenp、blog |To Be a Better Me</span>
+        <span class="site-title">MrDenp 的"宇宙"【-To Be a Better Me-】</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -308,13 +309,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/06/微信小程序-从零开始了解微信小程序的开发（一）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Mr.Denp.">
+      <meta itemprop="name" content="Mr.Denp">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="http://chuantu.biz/t6/309/1526026644x-1404793214.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MrDenp、blog |To Be a Better Me">
+      <meta itemprop="name" content="MrDenp 的"宇宙"【-To Be a Better Me-】">
     </span>
 
     
@@ -409,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  269
+                  844
                 </span>
               
 
@@ -425,7 +426,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -457,17 +458,12 @@
 <ul>
 <li>index.wxml</li>
 <li>index.wxss</li>
-<li>index.js<br><code>logs</code></li>
+<li>index.js</li>
 </ul>
+<p><code>logs</code></p>
 </blockquote>
-</blockquote>
-<blockquote>
 <p><code>app.js</code></p>
-</blockquote>
-<blockquote>
 <p><code>app.json</code></p>
-</blockquote>
-<blockquote>
 <p><code>app.wxss</code></p>
 </blockquote>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ul>
@@ -476,23 +472,96 @@
 <li><p>pages</p>
 <blockquote>
 <p>接受一个数组，每一项都是字符串，来指定小程序由哪些页面组成。每一项代表对应页面的【路径+文件名】信息，数组的第一项代表小程序的初始页面。小程序中新增/减少页面，都需要对 pages 数组进行修改。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;pages&quot;:[</span><br><span class="line">        &quot;pages/index/index&quot;,</span><br><span class="line">        &quot;pages/logs/logs&quot;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;pages&quot;:[</span><br><span class="line">      &quot;pages/index/index&quot;,</span><br><span class="line">      &quot;pages/logs/logs&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 <li><p>window</p>
+</li>
+</ul>
+</li>
+<li><p><img src="微信小程序-从零开始了解微信小程序的开发（一）/json_window.png" alt="配置信息"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">      &quot;window&quot;:&#123;</span><br><span class="line">          &quot;navigationBarBackgroundColor&quot;: &quot;#ffffff&quot;,</span><br><span class="line">          &quot;navigationBarTextStyle&quot;: &quot;black&quot;,</span><br><span class="line">          &quot;navigationBarTitleText&quot;: &quot;微信接口功能演示&quot;,</span><br><span class="line">          &quot;backgroundColor&quot;: &quot;#eeeeee&quot;,</span><br><span class="line">          &quot;backgroundTextStyle&quot;: &quot;light&quot;,</span><br><span class="line">          &quot;navigationStyle&quot;: &quot;custom&quot;,</span><br><span class="line">          &quot;enablePullDownRefresh&quot;: false</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
-<li><img src="微信小程序-从零开始了解微信小程序的开发（一）/json_window.png" alt="配置信息"></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;window&quot;:&#123;</span><br><span class="line">        &quot;navigationBarBackgroundColor&quot;: &quot;#ffffff&quot;,</span><br><span class="line">        &quot;navigationBarTextStyle&quot;: &quot;black&quot;,</span><br><span class="line">        &quot;navigationBarTitleText&quot;: &quot;微信接口功能演示&quot;,</span><br><span class="line">        &quot;backgroundColor&quot;: &quot;#eeeeee&quot;,</span><br><span class="line">        &quot;backgroundTextStyle&quot;: &quot;light&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>tabBar</p>
-</li>
-<li>networkTimeout</li>
-<li>debug</li>
-</ul>
+<li>tabBar<blockquote>
+<p>如果小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。</p>
+</blockquote>
 </li>
 </ul>
-<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><h4 id="逻辑层"><a href="#逻辑层" class="headerlink" title="逻辑层"></a>逻辑层</h4><h4 id="视图层"><a href="#视图层" class="headerlink" title="视图层"></a>视图层</h4><h3 id="自定义组件"><a href="#自定义组件" class="headerlink" title="自定义组件"></a>自定义组件</h3><h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><h3 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h3>
+<p>注意：当设置 position 为 top 时，将不会显示 icon，list是一个数组，该数组最少配置2个tab，最多5个tab，tab按照数组的顺序进行排列。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;tabBar&quot;:&#123;</span><br><span class="line">      &quot;position&quot;:&quot;bottom&quot;,</span><br><span class="line">      &quot;borderStyle&quot;:&quot;black&quot;,</span><br><span class="line">      &quot;color&quot;:&quot;#FFF&quot;,</span><br><span class="line">      &quot;selectedColor&quot;:&quot;#333&quot;,</span><br><span class="line">      &quot;list&quot;:[</span><br><span class="line">          &#123;</span><br><span class="line">              &quot;text&quot;:&quot;首页&quot;,</span><br><span class="line">              &quot;pagePath&quot;:&quot;pages/index/index&quot;,</span><br><span class="line">              &quot;iconPath&quot;:&quot;/static/images/index.png&quot;,</span><br><span class="line">              &quot;selectedIconPath&quot;:&quot;/static/images/index.png&quot;</span><br><span class="line">          &#125;,</span><br><span class="line">      ],</span><br><span class="line">      &quot;backgroundColor&quot;:&quot;#efefef&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>networkTimeout<blockquote>
+<p>可以设置各种网络请求的超时时间。<br><img src="微信小程序-从零开始了解微信小程序的开发（一）/json_networkTimeout.png" alt="超时属性"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;networkTimeout&quot;:&#123;</span><br><span class="line">      &quot;request&quot;: 6000,</span><br><span class="line">      &quot;connectSocket&quot;: 6000,</span><br><span class="line">      &quot;uploadFile&quot;: 6000,</span><br><span class="line">      &quot;downloadFile&quot;: 6000,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>page.json    每一个小程序页面也可以使用.json文件来对本页面的窗口表现进行配置。 页面的配置比app.json全局配置简单得多，只是设置 app.json 中的 window 配置项的内容，页面中配置项会覆盖 app.json 的 window 中相同的配置项。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">     &quot;navigationBarBackgroundColor&quot;: &quot;#ffffff&quot;,</span><br><span class="line">     &quot;navigationBarTextStyle&quot;: &quot;black&quot;,</span><br><span class="line">     &quot;navigationBarTitleText&quot;: &quot;微信接口功能演示&quot;,</span><br><span class="line">     &quot;backgroundColor&quot;: &quot;#eeeeee&quot;,</span><br><span class="line">     &quot;backgroundTextStyle&quot;: &quot;light&quot;,</span><br><span class="line">     &quot;enablePullDownRefresh&quot;: false,</span><br><span class="line">     &quot;disableScroll&quot;: false,//true 设置页面整体不能上下滚动，仅设置在page.json</span><br><span class="line">     &quot;onReachBottomDistance&quot;: 50</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><h4 id="逻辑层"><a href="#逻辑层" class="headerlink" title="逻辑层"></a>逻辑层</h4><h5 id="注册程序"><a href="#注册程序" class="headerlink" title="注册程序"></a>注册程序</h5><blockquote>
+<p><code>APP()</code> 函数用来注册一个小程序。接收一个object参数。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">App(&#123;</span><br><span class="line">      onlaunch()&#123;</span><br><span class="line">          <span class="comment">//监听一个小程序的初始化，全局只触发一次 `生命周期函数`</span></span><br><span class="line">      &#125;，</span><br><span class="line">      onShow()&#123;</span><br><span class="line">          <span class="comment">//监听一个小程序的页面显示的 `生命周期函数`</span></span><br><span class="line">      &#125;,</span><br><span class="line">      onHide()&#123;</span><br><span class="line">            <span class="comment">//监听一个小程序的页面隐藏的 `生命周期函数`</span></span><br><span class="line">      &#125;,</span><br><span class="line">      onPageNotFound()&#123;</span><br><span class="line">            <span class="comment">//监听一个小程序的页面不存在的 `生命周期函数`</span></span><br><span class="line">      &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>场景值</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">场景值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1001</td>
+<td style="text-align:center">发现栏小程序主入口</td>
+</tr>
+<tr>
+<td style="text-align:center">1005</td>
+<td style="text-align:center">顶部搜索框的搜索结果页</td>
+</tr>
+<tr>
+<td style="text-align:center">1006</td>
+<td style="text-align:center">发现栏小程序主入口搜索框的搜索结果页</td>
+</tr>
+<tr>
+<td style="text-align:center">1007</td>
+<td style="text-align:center">单人聊天会话中的小程序消息卡片</td>
+</tr>
+<tr>
+<td style="text-align:center">1008</td>
+<td style="text-align:center">群聊会话中的小程序消息卡片</td>
+</tr>
+<tr>
+<td style="text-align:center">1011</td>
+<td style="text-align:center">扫描二维码</td>
+</tr>
+<tr>
+<td style="text-align:center">1012</td>
+<td style="text-align:center">长按图片识别二维码</td>
+</tr>
+<tr>
+<td style="text-align:center">1013</td>
+<td style="text-align:center">手机相册选取二维码</td>
+</tr>
+<tr>
+<td style="text-align:center">1014</td>
+<td style="text-align:center">小程序模版消息</td>
+</tr>
+<tr>
+<td style="text-align:center">1017</td>
+<td style="text-align:center">顶部搜索框的搜索结果页</td>
+</tr>
+<tr>
+<td style="text-align:center">1005</td>
+<td style="text-align:center">顶部搜索框的搜索结果页</td>
+</tr>
+</tbody>
+</table>
+<h4 id="视图层"><a href="#视图层" class="headerlink" title="视图层"></a>视图层</h4><h3 id="自定义组件"><a href="#自定义组件" class="headerlink" title="自定义组件"></a>自定义组件</h3><h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><h3 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h3>
       
     </div>
     
@@ -553,7 +622,7 @@
           
           <div>
     
-        <div style="text-align:center;color: #ccc;font-size:14px;">------ 感谢你看到最后，下面可以评论哦！------</div>
+        <div style="text-align:center;color: #ccc;font-size:14px;padding: 30px 0;">------ 感谢你看到最后，下面可以评论哦！------</div>
     
 </div>
 
@@ -627,10 +696,10 @@
             
               <img class="site-author-image" itemprop="image"
                 src="http://chuantu.biz/t6/309/1526026644x-1404793214.jpg"
-                alt="Mr.Denp." />
+                alt="Mr.Denp" />
             
-              <p class="site-author-name" itemprop="name">Mr.Denp.</p>
-              <p class="site-description motion-element" itemprop="description">当初一咬牙一跺脚，放弃了专业，选择了前端。转眼间已经过去两年多，从看个HTML都费劲的无知小白到现在从事这个职业，起初告诉很多人是我的兴趣，殊不知这条路没有努力的日日夜夜如何能走到今天.这也只是个开始，以后的每一天我要感谢现在努力的自己.前端之路--</p>
+              <p class="site-author-name" itemprop="name">Mr.Denp</p>
+              <p class="site-description motion-element" itemprop="description">一杯敬朝阳，一杯敬月光。这也只是个开始，以后的每一天我要感谢现在努力的自己！守着善良，成长。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -724,7 +793,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#微信小程序"><span class="nav-number">1.</span> <span class="nav-text">微信小程序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#框架部分"><span class="nav-number">1.1.</span> <span class="nav-text">框架部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录结构"><span class="nav-number">1.1.1.</span> <span class="nav-text">目录结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">1.1.2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#框架"><span class="nav-number">1.1.3.</span> <span class="nav-text">框架</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑层"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">逻辑层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#视图层"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">视图层</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件"><span class="nav-number">1.1.4.</span> <span class="nav-text">自定义组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件"><span class="nav-number">1.1.5.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#性能优化"><span class="nav-number">1.1.6.</span> <span class="nav-text">性能优化</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#微信小程序"><span class="nav-number">1.</span> <span class="nav-text">微信小程序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#框架部分"><span class="nav-number">1.1.</span> <span class="nav-text">框架部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录结构"><span class="nav-number">1.1.1.</span> <span class="nav-text">目录结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">1.1.2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#框架"><span class="nav-number">1.1.3.</span> <span class="nav-text">框架</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑层"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">逻辑层</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#注册程序"><span class="nav-number">1.1.3.1.1.</span> <span class="nav-text">注册程序</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#视图层"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">视图层</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件"><span class="nav-number">1.1.4.</span> <span class="nav-text">自定义组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件"><span class="nav-number">1.1.5.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#性能优化"><span class="nav-number">1.1.6.</span> <span class="nav-text">性能优化</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -756,7 +825,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Mr.Denp.</span>
+  <span class="author" itemprop="copyrightHolder">Mr.Denp</span>
 
   
 </div>

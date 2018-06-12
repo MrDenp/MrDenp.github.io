@@ -1458,7 +1458,7 @@ pre .javascript .function {
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #555;
+  color: #032982;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1924,7 +1924,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff12e2;
+  background: #ebff2a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2781,6 +2781,10 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
+article a {
+  border: none;
+  color: rgba(205,128,253,0.79);
+}
 a:hover {
   color: #e22b2b;
 }
@@ -2790,8 +2794,17 @@ a:hover {
 .brand {
   background: #002884;
 }
+i.fa {
+  color: #69adfd;
+}
 .fa-heart {
   color: #f00;
+}
+blockquote {
+  padding: 0 15px;
+  color: #666;
+  border-left: 4px solid #69adfd;
+  background: #f1f1f1;
 }
 .post {
   margin-bottom: 60px;
@@ -2805,6 +2818,14 @@ a:hover {
 }
 a:hover {
   cursor: url("/images/cursor2.ico"), auto !important;
+}
+.btn {
+  background: #032982;
+  border: 2px solid #032982;
+}
+.btn:hover {
+  color: #032982;
+  border: 2px solid #032982;
 }
 .posts-expand .post-tags a {
   border-bottom: none;
@@ -2833,4 +2854,26 @@ img.img-topic {
   padding: 0;
   float: right;
   clear: right;
+}
+.posts-expand .post-title-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: rgba(135,218,255,0.73);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
