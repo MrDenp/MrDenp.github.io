@@ -93,7 +93,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/06/06/WeChatSmallProgram/json_window.png">
 <meta property="og:image" content="http://yoursite.com/2018/06/06/WeChatSmallProgram/json_networkTimeout.png">
-<meta property="og:updated_time" content="2018-06-12T11:22:25.457Z">
+<meta property="og:updated_time" content="2018-06-13T03:43:46.984Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序 从零开始了解微信小程序的开发（一）">
 <meta name="twitter:description" content="摘要：记录这个一是帮助更多从零开始的开发小白可以通俗易懂的了解小程序开发，另外一个目的就是对小程序开发从零开始总结梳理一下，帮助别人的同时提升自己。（ps - 在总结中成长，不论是任何行业都适用的一句真言。）">
@@ -410,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  844
+                  980
                 </span>
               
 
@@ -426,7 +426,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  4
                 </span>
               
             </div>
@@ -472,8 +472,8 @@
 <li><p>pages</p>
 <blockquote>
 <p>接受一个数组，每一项都是字符串，来指定小程序由哪些页面组成。每一项代表对应页面的【路径+文件名】信息，数组的第一项代表小程序的初始页面。小程序中新增/减少页面，都需要对 pages 数组进行修改。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;pages&quot;:[</span><br><span class="line">      &quot;pages/index/index&quot;,</span><br><span class="line">      &quot;pages/logs/logs&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;pages&quot;:[</span><br><span class="line">      &quot;pages/index/index&quot;,</span><br><span class="line">      &quot;pages/logs/logs&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>window</p>
 </li>
@@ -492,18 +492,19 @@
 <ul>
 <li>networkTimeout<blockquote>
 <p>可以设置各种网络请求的超时时间。<br><img src="./json_networkTimeout.png" alt="超时属性"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;networkTimeout&quot;:&#123;</span><br><span class="line">      &quot;request&quot;: 6000,</span><br><span class="line">      &quot;connectSocket&quot;: 6000,</span><br><span class="line">      &quot;uploadFile&quot;: 6000,</span><br><span class="line">      &quot;downloadFile&quot;: 6000,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;networkTimeout&quot;:&#123;</span><br><span class="line">      &quot;request&quot;: 6000,</span><br><span class="line">      &quot;connectSocket&quot;: 6000,</span><br><span class="line">      &quot;uploadFile&quot;: 6000,</span><br><span class="line">      &quot;downloadFile&quot;: 6000,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>page.json    每一个小程序页面也可以使用.json文件来对本页面的窗口表现进行配置。 页面的配置比app.json全局配置简单得多，只是设置 app.json 中的 window 配置项的内容，页面中配置项会覆盖 app.json 的 window 中相同的配置项。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">     &quot;navigationBarBackgroundColor&quot;: &quot;#ffffff&quot;,</span><br><span class="line">     &quot;navigationBarTextStyle&quot;: &quot;black&quot;,</span><br><span class="line">     &quot;navigationBarTitleText&quot;: &quot;微信接口功能演示&quot;,</span><br><span class="line">     &quot;backgroundColor&quot;: &quot;#eeeeee&quot;,</span><br><span class="line">     &quot;backgroundTextStyle&quot;: &quot;light&quot;,</span><br><span class="line">     &quot;enablePullDownRefresh&quot;: false,</span><br><span class="line">     &quot;disableScroll&quot;: false,//true 设置页面整体不能上下滚动，仅设置在page.json</span><br><span class="line">     &quot;onReachBottomDistance&quot;: 50</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><h4 id="逻辑层"><a href="#逻辑层" class="headerlink" title="逻辑层"></a>逻辑层</h4><h5 id="注册程序"><a href="#注册程序" class="headerlink" title="注册程序"></a>注册程序</h5><blockquote>
-<p><code>APP()</code> 函数用来注册一个小程序。接收一个object参数。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">App(&#123;</span><br><span class="line">      onlaunch()&#123;</span><br><span class="line">          <span class="comment">//监听一个小程序的初始化，全局只触发一次 `生命周期函数`</span></span><br><span class="line">      &#125;，</span><br><span class="line">      onShow()&#123;</span><br><span class="line">          <span class="comment">//监听一个小程序的页面显示的 `生命周期函数`</span></span><br><span class="line">      &#125;,</span><br><span class="line">      onHide()&#123;</span><br><span class="line">            <span class="comment">//监听一个小程序的页面隐藏的 `生命周期函数`</span></span><br><span class="line">      &#125;,</span><br><span class="line">      onPageNotFound()&#123;</span><br><span class="line">            <span class="comment">//监听一个小程序的页面不存在的 `生命周期函数`</span></span><br><span class="line">      &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><code>APP()</code> 函数用来注册一个小程序。接收一个object参数。</p>
 </blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">App(&#123;</span><br><span class="line">      onlaunch()&#123;</span><br><span class="line">          <span class="comment">//监听一个小程序的初始化，全局只触发一次 `生命周期函数`</span></span><br><span class="line">      &#125;，</span><br><span class="line">      onShow()&#123;</span><br><span class="line">          <span class="comment">//监听一个小程序的页面显示的 `生命周期函数`</span></span><br><span class="line">      &#125;,</span><br><span class="line">      onHide()&#123;</span><br><span class="line">            <span class="comment">//监听一个小程序的页面隐藏的 `生命周期函数`</span></span><br><span class="line">      &#125;,</span><br><span class="line">      onPageNotFound()&#123;</span><br><span class="line">            <span class="comment">//监听一个小程序的页面不存在的 `生命周期函数`</span></span><br><span class="line">      &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>场景值</p>
 </blockquote>
@@ -553,11 +554,71 @@
 </tr>
 <tr>
 <td style="text-align:center">1017</td>
-<td style="text-align:center">顶部搜索框的搜索结果页</td>
+<td style="text-align:center">前往体验版的入口页</td>
 </tr>
 <tr>
-<td style="text-align:center">1005</td>
-<td style="text-align:center">顶部搜索框的搜索结果页</td>
+<td style="text-align:center">1019</td>
+<td style="text-align:center">微信钱包</td>
+</tr>
+<tr>
+<td style="text-align:center">1020</td>
+<td style="text-align:center">公众号 profile 页相关小程序列表</td>
+</tr>
+<tr>
+<td style="text-align:center">1022</td>
+<td style="text-align:center">聊天顶部置顶小程序入口</td>
+</tr>
+<tr>
+<td style="text-align:center">1023</td>
+<td style="text-align:center">安卓系统桌面图标</td>
+</tr>
+<tr>
+<td style="text-align:center">1024</td>
+<td style="text-align:center">小程序 profile 页</td>
+</tr>
+<tr>
+<td style="text-align:center">1025</td>
+<td style="text-align:center">扫描一维码</td>
+</tr>
+<tr>
+<td style="text-align:center">1026</td>
+<td style="text-align:center">附近小程序列表</td>
+</tr>
+<tr>
+<td style="text-align:center">1027</td>
+<td style="text-align:center">顶部搜索框搜索结果页“使用过的小程序”列表</td>
+</tr>
+<tr>
+<td style="text-align:center">1028</td>
+<td style="text-align:center">我的卡包</td>
+</tr>
+<tr>
+<td style="text-align:center">1031</td>
+<td style="text-align:center">长按图片识别一维码</td>
+</tr>
+<tr>
+<td style="text-align:center">1032</td>
+<td style="text-align:center">手机相册选取一维码</td>
+</tr>
+<tr>
+<td style="text-align:center">1036</td>
+<td style="text-align:center">App 分享消息卡片</td>
+</tr>
+<tr>
+<td style="text-align:center">1044</td>
+<td style="text-align:center">带 shareTicket 的小程序消息卡片（详情)</td>
+</tr>
+<tr>
+<td style="text-align:center">1047</td>
+<td style="text-align:center">扫描小程序码</td>
+</tr>
+<tr>
+<td style="text-align:center">1089</td>
+<td style="text-align:center">微信聊天主界面下拉</td>
+</tr>
+<tr>
+<td style="text-align:center">1090</td>
+<td style="text-align:center">长按小程序右上角菜单唤出最近使用历史</td>
 </tr>
 </tbody>
 </table>
