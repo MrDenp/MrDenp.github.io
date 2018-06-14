@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[FrontEndResources 资源积累]]></title>
+    <url>%2F2018%2F06%2F14%2FFrontEndResources%2F</url>
+    <content type="text"><![CDATA[一组资源分享开发类前端库工具框架构建部署后端设计类色彩 非常好用的渐变色网站 WebGradients.com 💎 ColorDrop - New colors 免费的图片资源网站-PEXELS规范其他类]]></content>
+      <categories>
+        <category>资源积累</category>
+      </categories>
+      <tags>
+        <tag>色彩搭配</tag>
+        <tag>开发库资源</tag>
+        <tag>开发组件资源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[微信小程序 从零开始了解微信小程序的开发（二）]]></title>
+    <url>%2F2018%2F06%2F14%2FWeChatSmallProgram1%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>微信</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+        <tag>实战项目</tag>
+        <tag>展示类</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[拉一个节约开发时间的库和资源]]></title>
     <url>%2F2018%2F06%2F08%2F%E6%8B%89%E4%B8%80%E4%B8%AA%E8%8A%82%E7%BA%A6%E5%BC%80%E5%8F%91%E6%97%B6%E9%97%B4%E7%9A%84%E5%BA%93%E5%92%8C%E8%B5%84%E6%BA%90%2F</url>
     <content type="text"><![CDATA[JavaScript 库Particles.js 在网页上创建炫酷的漂浮例子的库，在网站首页比较常见。 Three.js 在网页上创建 3D 对象和空间的库，常用于网页游戏。 Fullpage.js 轻松创建全屏滚动的网页。 Typed.js 实现打字机的效果。 Waypoints.js 实现滚动一个元素触发一个函数的最简单的方式。 Highlight.js 自动检测语言及高亮语法。 Chart.js 纯 JavaScript 实现炫酷图表。 Instantclick 大大提升网页加载效率，在鼠标悬停时预加载资源。 Chartist 另一个图表库。 Motio 实现基于 sprite 的动画和平移效果的库。 Animstion css 动画页面切换效果的 JQuery 插件 Barba.js 流畅和平滑的页面过渡效果。 TwentyTwenty 一个视觉差异工具，突出两个图像之间的差异。 Vivus.js 用于在 SVG 上绘制动画的库。 Wow.js 滚动时显示动画。 Scrolline.js 显示页面的滚动进度条。 Velocity.js 快速、平滑的 JavaScript 动画。 Animate on scroll 另一个滚动显示动画的库。 Handlebars.js —— JavaScript 模版。 jInvertScroll —— 轻量级的水平视差插件。 One page scroll —— 与 FullPage 类似。 Parallax.js —— 视觉引擎，对智能设备的方向做出反应。 Typeahead.js —— 自动匹配搜索。 Dragdealer.js —— 相当酷的实现拖动效果的库。 Bounce.js —— 创建炫酷的 CSS3 动画。 Pagepiling.js —— 又一个 one page scroll. Multiscroll.js —— 实现多列滚动面板效果。 Favico.js —— 动态图标。 Midnight.js —— 无缝切换固定标题。 Anime.js —— 动画库。 Keycode —— 获得按键的 JavaScript 键码。 Sortable —— 拖动排序控件。 Flexdatalist —— 输入补全。 Slideout.js —— 在网页上实现抽屉效果的侧边导航栏。 Jquerymy —— 使用 jquery 的两种数据绑定方式。 Cleave.js —— 格式化输入内容。 Page —— 小型客户端路由库。 Selectize.js —— 用于添加标签的选择框。 Nice select —— 用于创建奈斯型选择框。 Tether —— 可以有效地固定绝对定位的元素。 Shepherd.js —— 实现指导用户使用应用的效果。 Tooltip —— 提示信息。 Select2 —— 丰富的自定义选择框。 IziToast —— 容易实现的 JS 通知。 IziModal —— 容易实现的 JS 弹窗。 CSS 库／设计类Animate.css —— 动画库。 Flat UI Colors —— 简单有效的颜色。 Material design lite —— 基于 Google 的 Material Design。 Materialui.co —— 许多 Material Design 框架的资源。 Colorrrs —— 随机颜色生成器。 Section separators —— CSS 分割线。 Topcoat —— 简单快速的 CSS 框架。 Create ken burns effect —— 使用 CSS 动画的 Ken Burns 效果。 DynCSS —— 为 CSS 添加函数，让它变成动态的。 Magic animations —— 人如其名。 CSSpin —— CSS 旋转控件集合。 Feather icons —— 图标。 Ion icons —— 图标。 Font awesome —— 图标。 Font generator —— 组合多种字体，生成一个混合体。 On/Off switch —— 开关按钮。 UI Kit —— 轻型的模块化框架。 Bootstrap —— 这个就不谈了。 Foundation —— 号称最先进的响应式前端框架。]]></content>

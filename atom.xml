@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-12T10:32:06.823Z</updated>
+  <updated>2018-06-14T09:29:10.946Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FrontEndResources 资源积累</title>
+    <link href="http://yoursite.com/2018/06/14/FrontEndResources/"/>
+    <id>http://yoursite.com/2018/06/14/FrontEndResources/</id>
+    <published>2018-06-14T06:55:00.000Z</published>
+    <updated>2018-06-14T09:29:10.946Z</updated>
+    
+    <summary type="html">
+    
+      这篇文章将会更新积累从设计到开发所有相关的资源。每次更新的都是干货，分享出来，给别人也是给自己一份宝贵的积累。涉及的领域会很广很杂，这个只是初步的一个汇总，当累积量达到1208条时，将会是我另一个` 阶段` 的开始。当前累积量：`30` 条
+    
+    </summary>
+    
+      <category term="资源积累" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90%E7%A7%AF%E7%B4%AF/"/>
+    
+    
+      <category term="色彩搭配" scheme="http://yoursite.com/tags/%E8%89%B2%E5%BD%A9%E6%90%AD%E9%85%8D/"/>
+    
+      <category term="开发库资源" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E5%BA%93%E8%B5%84%E6%BA%90/"/>
+    
+      <category term="开发组件资源" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E7%BB%84%E4%BB%B6%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序 从零开始了解微信小程序的开发（二）</title>
+    <link href="http://yoursite.com/2018/06/14/WeChatSmallProgram1/"/>
+    <id>http://yoursite.com/2018/06/14/WeChatSmallProgram1/</id>
+    <published>2018-06-14T02:54:51.000Z</published>
+    <updated>2018-06-14T07:52:13.513Z</updated>
+    
+    <summary type="html">
+    
+      学习程序几天了，基本上都是在上班休息之余通过阅读官方文档来学的，所以有些 API 还不是很清楚。随着小程序的火热，小程序开发貌似成为了很多公司招聘需求，现在我意识到，如果我将自己的简历或者主页做成一个小程序来维护的话，拿出主页的时候会不会显得‘高大上’...
+    
+    </summary>
+    
+      <category term="微信" scheme="http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1/"/>
+    
+    
+      <category term="小程序" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+      <category term="实战项目" scheme="http://yoursite.com/tags/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="展示类" scheme="http://yoursite.com/tags/%E5%B1%95%E7%A4%BA%E7%B1%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>拉一个节约开发时间的库和资源</title>
@@ -67,11 +115,11 @@
     <link href="http://yoursite.com/2018/06/06/WeChatSmallProgram/"/>
     <id>http://yoursite.com/2018/06/06/WeChatSmallProgram/</id>
     <published>2018-06-06T07:12:05.000Z</published>
-    <updated>2018-06-14T02:12:12.025Z</updated>
+    <updated>2018-06-14T02:14:16.699Z</updated>
     
     <summary type="html">
     
-      记录这个一是帮助更多从零开始的开发小白可以通俗易懂的了解小程序开发，另外一个目的就是对小程序开发从零开始总结梳理一下，帮助别人的同时提升自己。（ps - 在总结中成长，不论是任何行业都适用的一句真言。）
+      摘要：记录这个一是帮助更多从零开始的开发小白可以通俗易懂的了解小程序开发，另外一个目的就是对小程序开发从零开始总结梳理一下，帮助别人的同时提升自己。（ps - 在总结中成长，不论是任何行业都适用的一句真言。）
     
     </summary>
     
