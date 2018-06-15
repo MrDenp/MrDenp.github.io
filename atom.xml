@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-14T10:23:44.408Z</updated>
+  <updated>2018-06-15T11:27:17.031Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>compatibility 工作中遇到的一些兼容问题</title>
+    <link href="http://yoursite.com/2018/06/15/compatibility/"/>
+    <id>http://yoursite.com/2018/06/15/compatibility/</id>
+    <published>2018-06-15T11:16:20.000Z</published>
+    <updated>2018-06-15T11:27:17.031Z</updated>
+    
+    <summary type="html">
+    
+      在工作项目中的一些兼容问题，尤其是ios，各种BUG啊，很痛苦，发现一个，更新一个.....
+    
+    </summary>
+    
+      <category term="前端兼容问题" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/"/>
+    
+    
+      <category term="ios兼容" scheme="http://yoursite.com/tags/ios%E5%85%BC%E5%AE%B9/"/>
+    
+      <category term="安卓兼容" scheme="http://yoursite.com/tags/%E5%AE%89%E5%8D%93%E5%85%BC%E5%AE%B9/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序 从零开始了解微信小程序的开发（二）</title>

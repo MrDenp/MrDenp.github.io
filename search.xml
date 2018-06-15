@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[compatibility 工作中遇到的一些兼容问题]]></title>
+    <url>%2F2018%2F06%2F15%2Fcompatibility%2F</url>
+    <content type="text"><![CDATA[兼容IOS new Date() 在ios中不识别 2018-06-14 中的‘-’，只识别‘/’，当时做项目的时候在模拟机上测试没有问题，安卓也没有问题，但是一上ios真机就bug了，很难受，最后还是alert() 出 new Date(2018-06-14 23:00:00) 的时候为 invalid date,这才发现问题。安卓]]></content>
+      <categories>
+        <category>前端兼容问题</category>
+      </categories>
+      <tags>
+        <tag>ios兼容</tag>
+        <tag>安卓兼容</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[微信小程序 从零开始了解微信小程序的开发（二）]]></title>
     <url>%2F2018%2F06%2F14%2FWeChatSmallProgram1%2F</url>
     <content type="text"></content>
