@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[FrontEndResources 资源积累]]></title>
-    <url>%2F2018%2F06%2F14%2FFrontEndResources%2F</url>
-    <content type="text"><![CDATA[一组资源分享开发类前端库工具框架构建部署后端设计类色彩 非常好用的渐变色网站 WebGradients.com 💎 ColorDrop - New colors 免费的图片资源网站-PEXELS规范其他类]]></content>
-      <categories>
-        <category>资源积累</category>
-      </categories>
-      <tags>
-        <tag>色彩搭配</tag>
-        <tag>开发库资源</tag>
-        <tag>开发组件资源</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[微信小程序 从零开始了解微信小程序的开发（二）]]></title>
     <url>%2F2018%2F06%2F14%2FWeChatSmallProgram1%2F</url>
     <content type="text"></content>
@@ -24,6 +11,19 @@
         <tag>小程序</tag>
         <tag>实战项目</tag>
         <tag>展示类</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[FrontEndResources 资源积累]]></title>
+    <url>%2F2018%2F06%2F12%2FFrontEndResources%2F</url>
+    <content type="text"><![CDATA[一组资源分享开发类前端库工具框架构建部署后端设计类色彩 非常好用的渐变色网站 WebGradients.com 💎 ColorDrop - New colors 免费的图片资源网站-PEXELS规范其他类]]></content>
+      <categories>
+        <category>资源积累</category>
+      </categories>
+      <tags>
+        <tag>色彩搭配</tag>
+        <tag>开发库资源</tag>
+        <tag>开发组件资源</tag>
       </tags>
   </entry>
   <entry>
