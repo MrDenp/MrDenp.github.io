@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-15T11:27:17.031Z</updated>
+  <updated>2018-06-19T10:06:05.348Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Typed.js 实现一个打字机效果的库</title>
+    <link href="http://yoursite.com/2018/06/19/Typed-js/"/>
+    <id>http://yoursite.com/2018/06/19/Typed-js/</id>
+    <published>2018-06-19T08:00:16.000Z</published>
+    <updated>2018-06-19T10:06:05.348Z</updated>
+    
+    <summary type="html">
+    
+      最近看到很多网站上都有一种页面效果，在页面某个区域会有像打字机一样一个一个将文字输出，并且有着光标的闪动，顿时感觉很炫酷，查了下发现了有个库可以实现这个效果。这个库非常的轻量，仅仅只有400多行代码......
+    
+    </summary>
+    
+      <category term="实现一个打字机效果小案例" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%89%93%E5%AD%97%E6%9C%BA%E6%95%88%E6%9E%9C%E5%B0%8F%E6%A1%88%E4%BE%8B/"/>
+    
+    
+      <category term="前端库" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF%E5%BA%93/"/>
+    
+      <category term="Typed.js" scheme="http://yoursite.com/tags/Typed-js/"/>
+    
+  </entry>
   
   <entry>
     <title>compatibility 工作中遇到的一些兼容问题</title>
@@ -91,7 +113,7 @@
     <link href="http://yoursite.com/2018/06/08/%E6%8B%89%E4%B8%80%E4%B8%AA%E8%8A%82%E7%BA%A6%E5%BC%80%E5%8F%91%E6%97%B6%E9%97%B4%E7%9A%84%E5%BA%93%E5%92%8C%E8%B5%84%E6%BA%90/"/>
     <id>http://yoursite.com/2018/06/08/拉一个节约开发时间的库和资源/</id>
     <published>2018-06-08T06:26:00.000Z</published>
-    <updated>2018-06-12T10:32:06.823Z</updated>
+    <updated>2018-06-19T10:04:51.322Z</updated>
     
     <summary type="html">
     
