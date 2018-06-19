@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Typed.js 实现一个打字机效果的库]]></title>
+    <url>%2F2018%2F06%2F19%2FTyped-js%2F</url>
+    <content type="text"><![CDATA[Typed.js 使用Typed.js 库的安装安装NPM:1npm install typed.js Yarn1yarn add typed.js Bower1bower install typed.js Setup1234567// Can also be included with a regular script tagimport Typed from &apos;typed.js&apos;;var options = &#123; strings: [&quot;&lt;i&gt;First&lt;/i&gt; sentence.&quot;, &quot;&amp;amp; a second sentence.&quot;], typeSpeed: 40&#125;var typed = new Typed(&quot;.element&quot;, options); 实例化HTML12345&lt;div id="typed-strings"&gt; &lt;p&gt;Typed.js is a &lt;strong&gt;JavaScript&lt;/strong&gt; library.&lt;/p&gt; &lt;p&gt;It &lt;em&gt;types&lt;/em&gt; out sentences.&lt;/p&gt;&lt;/div&gt;&lt;span id="typed"&gt;&lt;/span&gt; javascript12345&lt;script&gt; var typed = new Typed(&apos;#typed&apos;, &#123; stringsElement: &apos;#typed-strings&apos; &#125;);&lt;/script&gt; 配置12345678910111213141516&#123;//数组类型,里面存放文本内容，输出的文本。从下标0开始，打印第一个，从新覆盖，打印出第二个。注意：输出标签时，在input会直接输出标签，如果在一个div内，会当标签执行掉 strings: [&quot;These are the default values...&quot;, &quot;You know what you should do?&quot;, &quot;Use your own!&quot;, &quot;Have a great day!&quot;], backSpeed: 60, //删除字的速度 startDelay: 100, //每一句开始打字停顿的时间 backDelay: 500, //每一句删除字的停顿时间 loop: true, //是否循环动画 loopCount: 5/Infinity, //循环次数 showCursor: true, //是否显示光标 cursorChar: &quot;︳&quot;, //设置光标字符 autoInsertCss: false, fadeOut boolean, //类型，开启运动效果，==和下面的fadeOutClass和fadeOutDelay才能看出效果== fadeOutClass:’typed-fade-out’, //string 类型，比如：’typed-fade-out’值 fadeOutDelay: 500, //number 类型，设置淡出为毫秒为单位。&#125; 对这个库的分析理解 起初看到这个插件库的时候我以为可以控制每段文字是否可以回删，后来仔细的了解之后，额是我想多了，那种每段文字有时间间隔 有换行的那种效果其实是某一个元素中的处理。 例如：12strings : [&quot;事业和爱情.^2000\n我爱写程序.^2000\n我爱做很Cool的东西.^2000\n谢谢...&quot;],//这里的 ^2000 是指定的间隔时间 \n 换行 案例开发 现在我想做一个输出一段代码，并且这段代码的样式像编辑器里的代码样式那样，有各式各样的样式区分，这里首先想到的一个难点是，在这个插件解析输入的文本时除了input标签里会把标签当做字符串输出来，其他的标签则会解析对应的标签，这个问题该如何解决？ 案例的需求分析 既然有了这样的需求，那么就想办法解决一下完成这个需求中的难点 难点解决 这个难点的问题在于标签在除 input 标签里都会发生标签的解析，这样我们在输出的文本中就无法完成标签的显示，其实在配置项中有个配置叫做 contentType 默认设置为 html,当我们不需要解析标签时将其设置为 ‘null’ 就ok了,但是这样又存在一个问题，这样做的结果是所有的标签都不会解析了，如果说我们需要设置样式的话就没办法完成了。很痛苦啊。1strings : [`&lt;span style=&apos;color: #8ba7c9;&apos;&gt;&lt;&lt;span style=&apos;color: #dd6655&apos;&gt;span&lt;/span&gt;&gt;&lt;span style=&quot;color:#fff&quot;&gt;这是输出的span标签里的内容&lt;/span&gt;&lt; /&lt;span style=&apos;color: #dd6655&apos;&gt;span&lt;/span&gt;&gt;&lt;/span&gt;^2000`],]]></content>
+      <categories>
+        <category>实现一个打字机效果小案例</category>
+      </categories>
+      <tags>
+        <tag>前端库</tag>
+        <tag>Typed.js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[compatibility 工作中遇到的一些兼容问题]]></title>
     <url>%2F2018%2F06%2F15%2Fcompatibility%2F</url>
     <content type="text"><![CDATA[兼容IOS new Date() 在ios中不识别 2018-06-14 中的‘-’，只识别‘/’，当时做项目的时候在模拟机上测试没有问题，安卓也没有问题，但是一上ios真机就bug了，很难受，最后还是alert() 出 new Date(2018-06-14 23:00:00) 的时候为 invalid date,这才发现问题。安卓]]></content>
@@ -28,7 +40,7 @@
   <entry>
     <title><![CDATA[FrontEndResources 资源积累]]></title>
     <url>%2F2018%2F06%2F12%2FFrontEndResources%2F</url>
-    <content type="text"><![CDATA[一组资源分享开发类前端库工具框架构建部署后端设计类色彩 非常好用的渐变色网站 WebGradients.com 💎 ColorDrop - New colors 免费的图片资源网站-PEXELS规范其他类]]></content>
+    <content type="text"><![CDATA[一组资源分享开发类前端库 实现打字机的效果 💎工具框架构建部署后端设计类色彩 非常好用的渐变色网站 WebGradients.com 💎 ColorDrop - New colors 免费的图片资源网站-PEXELS规范其他类]]></content>
       <categories>
         <category>资源积累</category>
       </categories>
