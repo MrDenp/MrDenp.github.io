@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-19T10:06:05.348Z</updated>
+  <updated>2018-06-20T01:13:18.196Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Typed.js 实现一个打字机效果的库</title>
+    <title>Typed.js 一个实现打字机效果的库</title>
     <link href="http://yoursite.com/2018/06/19/Typed-js/"/>
     <id>http://yoursite.com/2018/06/19/Typed-js/</id>
     <published>2018-06-19T08:00:16.000Z</published>
-    <updated>2018-06-19T10:06:05.348Z</updated>
+    <updated>2018-06-20T01:13:18.196Z</updated>
     
     <summary type="html">
     

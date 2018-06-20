@@ -86,14 +86,14 @@
 <meta name="description" content="最近看到很多网站上都有一种页面效果，在页面某个区域会有像打字机一样一个一个将文字输出，并且有着光标的闪动，顿时感觉很炫酷，查了下发现了有个库可以实现这个效果。这个库非常的轻量，仅仅只有400多行代码......">
 <meta name="keywords" content="前端库,Typed.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Typed.js 实现一个打字机效果的库">
+<meta property="og:title" content="Typed.js 一个实现打字机效果的库">
 <meta property="og:url" content="http://yoursite.com/2018/06/19/Typed-js/index.html">
 <meta property="og:site_name" content="MrDenp 的&#39;宇宙&#39;【-To Be a Better Me-】">
 <meta property="og:description" content="最近看到很多网站上都有一种页面效果，在页面某个区域会有像打字机一样一个一个将文字输出，并且有着光标的闪动，顿时感觉很炫酷，查了下发现了有个库可以实现这个效果。这个库非常的轻量，仅仅只有400多行代码......">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-19T10:06:05.348Z">
+<meta property="og:updated_time" content="2018-06-20T01:13:18.196Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Typed.js 实现一个打字机效果的库">
+<meta name="twitter:title" content="Typed.js 一个实现打字机效果的库">
 <meta name="twitter:description" content="最近看到很多网站上都有一种页面效果，在页面某个区域会有像打字机一样一个一个将文字输出，并且有着光标的闪动，顿时感觉很炫酷，查了下发现了有个库可以实现这个效果。这个库非常的轻量，仅仅只有400多行代码......">
 
 
@@ -130,7 +130,7 @@
 
 
 
-  <title>Typed.js 实现一个打字机效果的库 | MrDenp 的'宇宙'【-To Be a Better Me-】</title>
+  <title>Typed.js 一个实现打字机效果的库 | MrDenp 的'宇宙'【-To Be a Better Me-】</title>
   
 
 
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Typed.js 实现一个打字机效果的库</h1>
+          <h1 class="post-title" itemprop="name headline">Typed.js 一个实现打字机效果的库</h1>
         
 
         <div class="post-meta">
@@ -385,7 +385,7 @@
 
           
           
-             <span id="/2018/06/19/Typed-js/" class="leancloud_visitors" data-flag-title="Typed.js 实现一个打字机效果的库">
+             <span id="/2018/06/19/Typed-js/" class="leancloud_visitors" data-flag-title="Typed.js 一个实现打字机效果的库">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,7 +408,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  805
+                  816
                 </span>
               
 
@@ -467,7 +467,7 @@
 <p>既然有了这样的需求，那么就想办法解决一下完成这个需求中的难点</p>
 </blockquote>
 <h4 id="难点解决"><a href="#难点解决" class="headerlink" title="难点解决"></a>难点解决</h4><ul>
-<li>这个难点的问题在于标签在除 <code>input</code> 标签里都会发生标签的解析，这样我们在输出的文本中就无法完成标签的显示，其实在<code>配置项</code>中有个配置叫做 <code>contentType</code> 默认设置为 <em>html</em>,当我们不需要解析标签时将其设置为 ‘null’ 就ok了,但是这样又存在一个问题，这样做的结果是所有的标签都不会解析了，如果说我们需要设置样式的话就没办法完成了。很痛苦啊。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">strings : [`&lt;span style=&apos;color: #8ba7c9;&apos;&gt;&lt;&lt;span style=&apos;color: #dd6655&apos;&gt;span&lt;/span&gt;&gt;&lt;span style=&quot;color:#fff&quot;&gt;这是输出的span标签里的内容&lt;/span&gt;&lt; /&lt;span style=&apos;color: #dd6655&apos;&gt;span&lt;/span&gt;&gt;&lt;/span&gt;^2000`],</span><br></pre></td></tr></table></figure>
+<li>这个难点的问题在于标签在除 <code>input</code> 标签里都会发生标签的解析，这样我们在输出的文本中就无法完成标签的显示，其实在<code>配置项</code>中有个配置叫做 <code>contentType</code> 默认设置为 <em>html</em>,当我们不需要解析标签时将其设置为 ‘null’ 就ok了,但是这样又存在一个问题，这样做的结果是所有的标签都不会解析了，如果说我们需要设置样式的话就没办法完成了。很痛苦啊。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">关键的一点就是这个了</span><br><span class="line">strings : [`&lt;span style=&apos;color: #8ba7c9;&apos;&gt;&lt;&lt;span style=&apos;color: #dd6655&apos;&gt;span&lt;/span&gt;&gt;&lt;span style=&quot;color:#fff&quot;&gt;这是输出的span标签里的内容&lt;/span&gt;&lt; /&lt;span style=&apos;color: #dd6655&apos;&gt;span&lt;/span&gt;&gt;&lt;/span&gt;^2000`],</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
