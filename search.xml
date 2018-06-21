@@ -13,11 +13,12 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[compatibility 工作中遇到的一些兼容问题]]></title>
+    <title><![CDATA[compatibility 工作中遇到的一些问题]]></title>
     <url>%2F2018%2F06%2F15%2Fcompatibility%2F</url>
-    <content type="text"><![CDATA[兼容IOS new Date() 在ios中不识别 2018-06-14 中的‘-’，只识别‘/’，当时做项目的时候在模拟机上测试没有问题，安卓也没有问题，但是一上ios真机就bug了，很难受，最后还是alert() 出 new Date(2018-06-14 23:00:00) 的时候为 invalid date,这才发现问题。安卓]]></content>
+    <content type="text"><![CDATA[兼容IOS new Date() 在ios中不识别 2018-06-14 中的‘-’，只识别‘/’，当时做项目的时候在模拟机上测试没有问题，安卓也没有问题，但是一上ios真机就bug了，很难受，最后还是alert() 出 new Date(2018-06-14 23:00:00) 的时候为 invalid date,这才发现问题。安卓工作中遇到的一些问题样式css处理文字超出部分显示省略号1.单行12345span&#123; overflow: hidden; text-overflow:ellipsis; white-space: nowrap;&#125; 2.多行123456span&#123; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;&#125; 逻辑其他]]></content>
       <categories>
         <category>前端兼容问题</category>
+        <category>css样式处理</category>
       </categories>
       <tags>
         <tag>ios兼容</tag>
@@ -40,7 +41,7 @@
   <entry>
     <title><![CDATA[FrontEndResources 资源积累]]></title>
     <url>%2F2018%2F06%2F12%2FFrontEndResources%2F</url>
-    <content type="text"><![CDATA[一组资源分享开发类前端库 实现打字机的效果 💎工具框架构建部署后端设计类色彩 非常好用的渐变色网站 WebGradients.com 💎 ColorDrop - New colors 免费的图片资源网站-PEXELS规范其他类]]></content>
+    <content type="text"><![CDATA[一组资源分享开发类前端库 实现打字机的效果 💎 Three.js-3D-手册 💎工具框架构建部署后端设计类色彩 非常好用的渐变色网站 WebGradients.com 💎 ColorDrop - New colors 免费的图片资源网站-PEXELS规范其他类]]></content>
       <categories>
         <category>资源积累</category>
       </categories>

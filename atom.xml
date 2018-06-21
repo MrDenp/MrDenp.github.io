@@ -39,11 +39,11 @@
   </entry>
   
   <entry>
-    <title>compatibility 工作中遇到的一些兼容问题</title>
+    <title>compatibility 工作中遇到的一些问题</title>
     <link href="http://yoursite.com/2018/06/15/compatibility/"/>
     <id>http://yoursite.com/2018/06/15/compatibility/</id>
     <published>2018-06-15T11:16:20.000Z</published>
-    <updated>2018-06-15T11:27:17.031Z</updated>
+    <updated>2018-06-21T10:07:43.820Z</updated>
     
     <summary type="html">
     
@@ -52,6 +52,8 @@
     </summary>
     
       <category term="前端兼容问题" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="css样式处理" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/css%E6%A0%B7%E5%BC%8F%E5%A4%84%E7%90%86/"/>
     
     
       <category term="ios兼容" scheme="http://yoursite.com/tags/ios%E5%85%BC%E5%AE%B9/"/>
@@ -89,7 +91,7 @@
     <link href="http://yoursite.com/2018/06/12/FrontEndResources/"/>
     <id>http://yoursite.com/2018/06/12/FrontEndResources/</id>
     <published>2018-06-12T06:55:00.000Z</published>
-    <updated>2018-06-19T07:40:14.628Z</updated>
+    <updated>2018-06-20T09:52:08.523Z</updated>
     
     <summary type="html">
     
