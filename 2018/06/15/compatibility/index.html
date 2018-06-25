@@ -92,7 +92,7 @@
 <meta property="og:description" content="在工作项目中的一些兼容问题，尤其是ios，各种BUG啊，很痛苦，发现一个，更新一个.....">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg">
-<meta property="og:updated_time" content="2018-06-25T10:39:03.278Z">
+<meta property="og:updated_time" content="2018-06-25T10:43:40.393Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="compatibility 工作中遇到的一些问题">
 <meta name="twitter:description" content="在工作项目中的一些兼容问题，尤其是ios，各种BUG啊，很痛苦，发现一个，更新一个.....">
@@ -465,7 +465,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" rel="gallery_cjiu4qy1h001ju0t13gq3vwsb"
+                 href="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" rel="gallery_cjiu4wraf001hb8t19v23kr94"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" itemprop="contentUrl"/>
               </a>
@@ -479,9 +479,9 @@
 
       
         <h1 id="兼容"><a href="#兼容" class="headerlink" title="兼容"></a>兼容</h1><h2 id="IOS"><a href="#IOS" class="headerlink" title="IOS"></a>IOS</h2><ol>
-<li><code>new Date()</code> 在ios中不识别 <code>2018-06-14</code> 中的<code>‘-’</code>，只识别<code>‘/’</code>，当时做项目的时候在模拟机上测试没有问题，安卓也没有问题，但是一上ios真机就bug了，很难受，最后还是<code>alert()</code> 出 <code>new Date(2018-06-14 23:00:00)</code> 的时候为 <code>invalid date</code>,这才发现问题。<h2 id="安卓"><a href="#安卓" class="headerlink" title="安卓"></a>安卓</h2><h2 id="工作中遇到的一些问题"><a href="#工作中遇到的一些问题" class="headerlink" title="工作中遇到的一些问题"></a>工作中遇到的一些问题</h2><h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><h4 id="css处理文字超出部分显示省略号"><a href="#css处理文字超出部分显示省略号" class="headerlink" title="css处理文字超出部分显示省略号"></a>css处理文字超出部分显示省略号</h4>1.单行<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">span</span>&#123;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">text-overflow</span>:ellipsis;</span><br><span class="line">    <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<li><code>new Date()</code> 在ios中不识别 <code>2018-06-14</code> 中的<code>‘-’</code>，只识别<code>‘/’</code>，当时做项目的时候在模拟机上测试没有问题，安卓也没有问题，但是一上ios真机就bug了，很难受，最后还是<code>alert()</code> 出 <code>new Date(2018-06-14 23:00:00)</code> 的时候为 <code>invalid date</code>,这才发现问题。</li>
 </ol>
+<h2 id="安卓"><a href="#安卓" class="headerlink" title="安卓"></a>安卓</h2><h2 id="工作中遇到的一些问题"><a href="#工作中遇到的一些问题" class="headerlink" title="工作中遇到的一些问题"></a>工作中遇到的一些问题</h2><h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><h4 id="css处理文字超出部分显示省略号"><a href="#css处理文字超出部分显示省略号" class="headerlink" title="css处理文字超出部分显示省略号"></a>css处理文字超出部分显示省略号</h4><p>1.单行<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">span</span>&#123;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">text-overflow</span>:ellipsis;</span><br><span class="line">    <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>2.多行<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">span</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: -webkit-box;</span><br><span class="line">    <span class="attribute">-webkit-box-orient</span>: vertical;</span><br><span class="line">    <span class="attribute">-webkit-line-clamp</span>: <span class="number">3</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="逻辑"><a href="#逻辑" class="headerlink" title="逻辑"></a>逻辑</h3><h4 id="VUE"><a href="#VUE" class="headerlink" title="VUE"></a>VUE</h4><h5 id="vue中的-keep-alive"><a href="#vue中的-keep-alive" class="headerlink" title="vue中的 keep-alive"></a>vue中的 <code>keep-alive</code></h5><p> <strong>keep-alive</strong></p>
 <blockquote>
