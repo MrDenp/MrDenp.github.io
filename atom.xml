@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-20T01:13:18.196Z</updated>
+  <updated>2018-06-22T02:51:00.767Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DailyCase-devicemotion</title>
+    <link href="http://yoursite.com/2018/06/22/DailyCase-devicemotion/"/>
+    <id>http://yoursite.com/2018/06/22/DailyCase-devicemotion/</id>
+    <published>2018-06-22T02:43:54.000Z</published>
+    <updated>2018-06-22T02:51:00.767Z</updated>
+    
+    <summary type="html">
+    
+      这几天公司的项目中有涉及到一个移动端的，类似于微信摇一摇这样的项目需求，之前对这部分没有过涉猎，我先看了重力感应事件相关的文档，随后根据项目需求做了一个小案例，用来巩固和记录这一块内容。
+    
+    </summary>
+    
+      <category term="每日一更demo" scheme="http://yoursite.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4demo/"/>
+    
+    
+      <category term="H5之重力感应事件" scheme="http://yoursite.com/tags/H5%E4%B9%8B%E9%87%8D%E5%8A%9B%E6%84%9F%E5%BA%94%E4%BA%8B%E4%BB%B6/"/>
+    
+      <category term="前端案例" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%88%E4%BE%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>Typed.js 一个实现打字机效果的库</title>
@@ -43,7 +65,7 @@
     <link href="http://yoursite.com/2018/06/15/compatibility/"/>
     <id>http://yoursite.com/2018/06/15/compatibility/</id>
     <published>2018-06-15T11:16:20.000Z</published>
-    <updated>2018-06-21T10:07:43.820Z</updated>
+    <updated>2018-06-25T09:03:35.093Z</updated>
     
     <summary type="html">
     
@@ -67,7 +89,7 @@
     <link href="http://yoursite.com/2018/06/14/WeChatSmallProgram1/"/>
     <id>http://yoursite.com/2018/06/14/WeChatSmallProgram1/</id>
     <published>2018-06-14T02:54:00.000Z</published>
-    <updated>2018-06-14T10:23:44.408Z</updated>
+    <updated>2018-06-25T05:07:32.776Z</updated>
     
     <summary type="html">
     
