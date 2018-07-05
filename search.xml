@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[countTime]]></title>
+    <title><![CDATA[封装一个倒计时插件]]></title>
     <url>%2F2018%2F07%2F04%2FcountTime%2F</url>
     <content type="text"><![CDATA[倒计时设定时长 这种主要是通过设置时间长度进行倒计时 分析流程 countTime(options){} 首先封装的功能模块所传的参数主要有时间长度，设定以 s（秒） m（分） h（时） d（天）等关键字为一个参数，默认为 s（秒）; 接下来我们需要确认的是该功能模块设置倒计时该如何显示到页面中？这里我的想法是将显示倒计时设置到每个指定的元素中，这些元素通过一个数组参数进行设置[s,m,h,d]; 代码实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394function CountTime(options)&#123; if(new Date(options.endTime.replace(/-/g, "/")).getTime() &lt; Date.now())&#123; alert("截止时间早于当前时间，请重新设置！"); return ; &#125; this.timeNum = options.TimeNum; this.ElementArray = options.ElementArray; this.timesObj; this.TimeStr = options.TimeStr || "s"; this.endTimeFlag = options.endTimeFlag || false; this.curTime; this.endTime; this.s; this.m; this.h; this.d; this.init = function()&#123; this.curTime = new Date().getTime(); if(!this.endTimeFlag)&#123; if(this.TimeStr === "s")&#123; this.endTime = this.curTime*1 + (this.timeNum * 1000); this.setTime(this.endTime-this.curTime*1); &#125;else if(this.TimeStr === "m")&#123; this.endTime = this.curTime*1 + (this.timeNum * 1000 * 60); this.setTime(this.endTime-this.curTime*1); &#125;else if(this.TimeStr === "h")&#123; this.endTime = this.curTime + (this.timeNum * 1000 * 60 * 60); this.setTime(this.endTime-this.curTime*1); &#125;else if(this.TimeStr === "d")&#123; this.endTime = this.curTime*1 + (this.timeNum * 1000 * 60 * 60 * 24); this.setTime(this.endTime-this.curTime*1); &#125; &#125;else&#123; if(options.endTime)&#123; this.endTime = new Date(options.endTime.replace(/-/g, "/")).getTime();//此处做了移动端 ios Date对象的兼容处理。 &#125;else&#123; console.log("请设置 ‘endTime’ 项，否则请将 'endTimeFlag' 设置为false获不写，不写默认为false") &#125; &#125; this.interval(); return this; &#125;; this.setTime = function(times)&#123; this.d = Math.floor(times/1000/60/60/24); this.h = Math.floor(times/1000/60/60%24) &lt; 10 ? "0"+Math.floor(times/1000/60/60%24): Math.floor(times/1000/60/60%24); this.m = Math.floor(times/1000/60%60) &lt; 10 ? "0"+Math.floor(times/1000/60%60): Math.floor(times/1000/60%60); this.s = Math.floor(times/1000%60) &lt; 10 ? "0"+Math.floor(times/1000%60): Math.floor(times/1000%60); &#125;; this.setElement = function()&#123; let that = this; if(that.ElementArray.length === 1)&#123; $(that.ElementArray[0]).html(this.d) &#125;else if(that.ElementArray.length === 2)&#123; $(that.ElementArray[0]).html(this.d); $(that.ElementArray[1]).html(this.h); &#125;else if(that.ElementArray.length === 3)&#123; $(that.ElementArray[0]).html(this.d); $(that.ElementArray[1]).html(this.h); $(that.ElementArray[2]).html(this.m); &#125;else if(that.ElementArray.length === 4)&#123; $(that.ElementArray[0]).html(this.d); $(that.ElementArray[1]).html(this.h); $(that.ElementArray[2]).html(this.m); $(that.ElementArray[3]).html(this.s); &#125; &#125;; this.interval = function()&#123; let that = this; that.timer = setInterval(function()&#123; that.curTime = new Date().getTime(); if(that.s &lt; 0)&#123; clearInterval(that.timer) &#125;else&#123; that.setTime(that.endTime-that.curTime); that.setElement(); that.timesObj =&#123; days:that.d, hours:that.hours, minutes:that.m, second: that.s &#125; &#125; &#125;,1000) &#125;&#125;/*使用方法:let timers = new CountTime(&#123; TimeNum: 5, ElementArray:[".day",".hour",".min",".sec"], TimeStr:"h"&#125;).init();*/]]></content>
       <categories>
@@ -48,6 +48,19 @@
         <tag>安卓兼容</tag>
         <tag>vue</tag>
         <tag>vue 组件过渡效果</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[微信小程序 从零开始了解微信小程序的开发（二）]]></title>
+    <url>%2F2018%2F06%2F14%2FWeChatSmallProgram1%2F</url>
+    <content type="text"><![CDATA[微信小程序富文本解析组件-wxParse]]></content>
+      <categories>
+        <category>微信</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+        <tag>实战项目</tag>
+        <tag>展示类</tag>
       </tags>
   </entry>
   <entry>
