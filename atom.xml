@@ -37,6 +37,30 @@
   </entry>
   
   <entry>
+    <title>微信小程序 从零开始了解微信小程序的开发（二）</title>
+    <link href="http://yoursite.com/2018/06/30/WeChatSmallProgram1/"/>
+    <id>http://yoursite.com/2018/06/30/WeChatSmallProgram1/</id>
+    <published>2018-06-30T02:54:00.000Z</published>
+    <updated>2018-07-05T06:57:00.549Z</updated>
+    
+    <summary type="html">
+    
+      学习小程序几天了，基本上都是在上班休息之余通过阅读官方文档来学的，所以有些 `API` 还不是很清楚。随着小程序的火热，小程序开发貌似成为了很多公司招聘需求，现在我意识到，如果我将自己的简历或者主页做成一个小程序来维护的话，拿出主页的时候会不会显得‘高大上’...
+    
+    </summary>
+    
+      <category term="微信" scheme="http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1/"/>
+    
+    
+      <category term="小程序" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+      <category term="实战项目" scheme="http://yoursite.com/tags/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="展示类" scheme="http://yoursite.com/tags/%E5%B1%95%E7%A4%BA%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>DailyCase-devicemotion</title>
     <link href="http://yoursite.com/2018/06/22/DailyCase-devicemotion/"/>
     <id>http://yoursite.com/2018/06/22/DailyCase-devicemotion/</id>
@@ -85,7 +109,7 @@
     <link href="http://yoursite.com/2018/06/15/compatibility/"/>
     <id>http://yoursite.com/2018/06/15/compatibility/</id>
     <published>2018-06-15T11:16:20.000Z</published>
-    <updated>2018-06-28T08:06:55.740Z</updated>
+    <updated>2018-07-10T05:50:14.479Z</updated>
     
     <summary type="html">
     
@@ -105,30 +129,6 @@
       <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
     
       <category term="vue 组件过渡效果" scheme="http://yoursite.com/tags/vue-%E7%BB%84%E4%BB%B6%E8%BF%87%E6%B8%A1%E6%95%88%E6%9E%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序 从零开始了解微信小程序的开发（二）</title>
-    <link href="http://yoursite.com/2018/06/14/WeChatSmallProgram1/"/>
-    <id>http://yoursite.com/2018/06/14/WeChatSmallProgram1/</id>
-    <published>2018-06-14T02:54:00.000Z</published>
-    <updated>2018-07-05T06:35:01.670Z</updated>
-    
-    <summary type="html">
-    
-      学习程序几天了，基本上都是在上班休息之余通过阅读官方文档来学的，所以有些 `API` 还不是很清楚。随着小程序的火热，小程序开发貌似成为了很多公司招聘需求，现在我意识到，如果我将自己的简历或者主页做成一个小程序来维护的话，拿出主页的时候会不会显得‘高大上’...
-    
-    </summary>
-    
-      <category term="微信" scheme="http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1/"/>
-    
-    
-      <category term="小程序" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-      <category term="实战项目" scheme="http://yoursite.com/tags/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE/"/>
-    
-      <category term="展示类" scheme="http://yoursite.com/tags/%E5%B1%95%E7%A4%BA%E7%B1%BB/"/>
     
   </entry>
   

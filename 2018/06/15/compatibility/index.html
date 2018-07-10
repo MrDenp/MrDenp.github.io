@@ -92,7 +92,7 @@
 <meta property="og:description" content="在工作项目中的一些兼容问题，尤其是ios，各种BUG啊，很痛苦，发现一个，更新一个.....">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg">
-<meta property="og:updated_time" content="2018-06-28T08:06:55.740Z">
+<meta property="og:updated_time" content="2018-07-10T05:50:14.479Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="compatibility 工作中遇到的一些问题">
 <meta name="twitter:description" content="在工作项目中的一些兼容问题，尤其是ios，各种BUG啊，很痛苦，发现一个，更新一个.....">
@@ -421,7 +421,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,456
+                  1,603
                 </span>
               
 
@@ -437,7 +437,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7
+                  8
                 </span>
               
             </div>
@@ -465,7 +465,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" rel="gallery_cjj86fqpb001omwt1lotl95o9"
+                 href="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" rel="gallery_cjjfgn86h001oxgt10ajka6e7"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" itemprop="contentUrl"/>
               </a>
@@ -548,6 +548,12 @@
 <blockquote>
 <p><font color="#ca0c16">注意：</font> 当只用 JavaScript 过渡的时候，在 enter 和 leave 中必须使用 done 进行回调。否则，它们将被同步调用，过渡会立即完成。</p>
 </blockquote>
+<h5 id="vue-中通过webpack全局引入jQuery"><a href="#vue-中通过webpack全局引入jQuery" class="headerlink" title="vue 中通过webpack全局引入jQuery"></a>vue <code>中通过webpack全局引入jQuery</code></h5><ol>
+<li>通过npm安装jQuery组件：<code>npm i jquery --save</code></li>
+<li>在 build/webpack.base.conf.js 里加入:  <code>const webpack = require(&quot;webpack&quot;)</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">   // 其他代码...</span><br><span class="line">   resolve: &#123;</span><br><span class="line">      extensions: [&apos;&apos;, &apos;.js&apos;, &apos;.vue&apos;],</span><br><span class="line">      fallback: [path.join(__dirname, &apos;../node_modules&apos;)],</span><br><span class="line">      alias: &#123;</span><br><span class="line">          &apos;src&apos;: path.resolve(__dirname, &apos;../src&apos;),</span><br><span class="line">          &apos;assets&apos;: path.resolve(__dirname, &apos;../src/assets&apos;),</span><br><span class="line">          &apos;components&apos;: path.resolve(__dirname, &apos;../src/components&apos;),</span><br><span class="line">          // webpack 使用 jQuery，如果是自行下载的</span><br><span class="line">          // &apos;jquery&apos;: path.resolve(__dirname, &apos;../src/assets/libs/jquery/jquery.min&apos;),</span><br><span class="line">          // 如果使用NPM安装的jQuery</span><br><span class="line">          &apos;jquery&apos;: &apos;jquery&apos;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">   // 增加一个plugins</span><br><span class="line">   plugins: [</span><br><span class="line">      new webpack.ProvidePlugin(&#123;</span><br><span class="line">          $: &quot;jquery&quot;,</span><br><span class="line">          jQuery: &quot;jquery&quot;</span><br><span class="line">      &#125;)</span><br><span class="line">   ],</span><br><span class="line">   // 其他代码...</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><strong>重新运行 npm run dev</strong></p>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3>
       
     </div>
@@ -584,8 +590,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/14/WeChatSmallProgram1/" rel="next" title="微信小程序 从零开始了解微信小程序的开发（二）">
-                <i class="fa fa-chevron-left"></i> 微信小程序 从零开始了解微信小程序的开发（二）
+              <a href="/2018/06/12/FrontEndResources/" rel="next" title="FrontEndResources 资源积累">
+                <i class="fa fa-chevron-left"></i> FrontEndResources 资源积累
               </a>
             
           </div>
@@ -780,7 +786,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#兼容"><span class="nav-number">1.</span> <span class="nav-text">兼容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#IOS"><span class="nav-number">1.1.</span> <span class="nav-text">IOS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安卓"><span class="nav-number">1.2.</span> <span class="nav-text">安卓</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作中遇到的一些问题"><span class="nav-number">1.3.</span> <span class="nav-text">工作中遇到的一些问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#样式"><span class="nav-number">1.3.1.</span> <span class="nav-text">样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#css处理文字超出部分显示省略号"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">css处理文字超出部分显示省略号</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑"><span class="nav-number">1.3.2.</span> <span class="nav-text">逻辑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#VUE"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">VUE</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#vue中的-keep-alive"><span class="nav-number">1.3.2.1.1.</span> <span class="nav-text">vue中的 keep-alive</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#vue-进入-离开-amp-列表过渡"><span class="nav-number">1.3.2.1.2.</span> <span class="nav-text">vue  进入/离开 &amp; 列表过渡</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">1.3.3.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#兼容"><span class="nav-number">1.</span> <span class="nav-text">兼容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#IOS"><span class="nav-number">1.1.</span> <span class="nav-text">IOS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安卓"><span class="nav-number">1.2.</span> <span class="nav-text">安卓</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作中遇到的一些问题"><span class="nav-number">1.3.</span> <span class="nav-text">工作中遇到的一些问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#样式"><span class="nav-number">1.3.1.</span> <span class="nav-text">样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#css处理文字超出部分显示省略号"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">css处理文字超出部分显示省略号</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑"><span class="nav-number">1.3.2.</span> <span class="nav-text">逻辑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#VUE"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">VUE</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#vue中的-keep-alive"><span class="nav-number">1.3.2.1.1.</span> <span class="nav-text">vue中的 keep-alive</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#vue-进入-离开-amp-列表过渡"><span class="nav-number">1.3.2.1.2.</span> <span class="nav-text">vue  进入/离开 &amp; 列表过渡</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#vue-中通过webpack全局引入jQuery"><span class="nav-number">1.3.2.1.3.</span> <span class="nav-text">vue 中通过webpack全局引入jQuery</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">1.3.3.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
