@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-05T06:32:49.385Z</updated>
+  <updated>2018-07-19T02:07:26.708Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vuex -状态管理-</title>
+    <link href="http://yoursite.com/2018/07/16/Vuex/"/>
+    <id>http://yoursite.com/2018/07/16/Vuex/</id>
+    <published>2018-07-16T09:16:33.000Z</published>
+    <updated>2018-07-19T02:07:26.708Z</updated>
+    
+    <summary type="html">
+    
+      刚开始使用vue的时候没有想到项目的功能状态会越来越多，并且多到维护管理的时候会有些杂乱.所以我选择学习并使用vuex管理项目的众多状态，这篇文章主要是记录一下在学习使用vuex状态管理的这个过程.
+    
+    </summary>
+    
+      <category term="vue" scheme="http://yoursite.com/categories/vue/"/>
+    
+      <category term="状态管理Vuex" scheme="http://yoursite.com/categories/vue/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86Vuex/"/>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+      <category term="状态管理Vuex" scheme="http://yoursite.com/tags/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86Vuex/"/>
+    
+  </entry>
   
   <entry>
     <title>封装一个倒计时插件</title>
@@ -41,7 +65,7 @@
     <link href="http://yoursite.com/2018/06/30/WeChatSmallProgram1/"/>
     <id>http://yoursite.com/2018/06/30/WeChatSmallProgram1/</id>
     <published>2018-06-30T02:54:00.000Z</published>
-    <updated>2018-07-05T06:57:00.549Z</updated>
+    <updated>2018-07-16T09:12:53.541Z</updated>
     
     <summary type="html">
     
@@ -109,7 +133,7 @@
     <link href="http://yoursite.com/2018/06/15/compatibility/"/>
     <id>http://yoursite.com/2018/06/15/compatibility/</id>
     <published>2018-06-15T11:16:20.000Z</published>
-    <updated>2018-07-10T05:50:14.479Z</updated>
+    <updated>2018-07-19T08:45:46.936Z</updated>
     
     <summary type="html">
     
@@ -122,11 +146,11 @@
       <category term="css样式处理" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/css%E6%A0%B7%E5%BC%8F%E5%A4%84%E7%90%86/"/>
     
     
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
       <category term="ios兼容" scheme="http://yoursite.com/tags/ios%E5%85%BC%E5%AE%B9/"/>
     
       <category term="安卓兼容" scheme="http://yoursite.com/tags/%E5%AE%89%E5%8D%93%E5%85%BC%E5%AE%B9/"/>
-    
-      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
     
       <category term="vue 组件过渡效果" scheme="http://yoursite.com/tags/vue-%E7%BB%84%E4%BB%B6%E8%BF%87%E6%B8%A1%E6%95%88%E6%9E%9C/"/>
     
@@ -233,13 +257,15 @@
     <link href="http://yoursite.com/2018/05/29/blockchain/"/>
     <id>http://yoursite.com/2018/05/29/blockchain/</id>
     <published>2018-05-29T01:45:18.000Z</published>
-    <updated>2018-05-29T01:49:30.434Z</updated>
+    <updated>2018-07-16T09:09:19.230Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;什么是区块链&quot;&gt;&lt;a href=&quot;#什么是区块链&quot; class=&quot;headerlink&quot; title=&quot;什么是区块链&quot;&gt;&lt;/a&gt;什么是区块链&lt;/h1&gt;
     
     </summary>
+    
+      <category term="区块链" scheme="http://yoursite.com/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
     
     
       <category term="区块链" scheme="http://yoursite.com/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
