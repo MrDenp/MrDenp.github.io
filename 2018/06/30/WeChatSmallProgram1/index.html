@@ -92,7 +92,7 @@
 <meta property="og:description" content="学习小程序几天了，基本上都是在上班休息之余通过阅读官方文档来学的，所以有些 `API` 还不是很清楚。随着小程序的火热，小程序开发貌似成为了很多公司招聘需求，现在我意识到，如果我将自己的简历或者主页做成一个小程序来维护的话，拿出主页的时候会不会显得‘高大上’...">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg">
-<meta property="og:updated_time" content="2018-07-16T09:12:53.541Z">
+<meta property="og:updated_time" content="2018-07-25T02:54:05.062Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序 从零开始了解微信小程序的开发（二）">
 <meta name="twitter:description" content="学习小程序几天了，基本上都是在上班休息之余通过阅读官方文档来学的，所以有些 `API` 还不是很清楚。随着小程序的火热，小程序开发貌似成为了很多公司招聘需求，现在我意识到，如果我将自己的简历或者主页做成一个小程序来维护的话，拿出主页的时候会不会显得‘高大上’...">
@@ -410,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  89
+                  183
                 </span>
               
 
@@ -454,7 +454,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg" rel="gallery_cjjsbb535000cdwt1l2k72zpq"
+                 href="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg" rel="gallery_cjl1l97ht000874t1zm1nu8dx"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg" itemprop="contentUrl"/>
               </a>
@@ -472,11 +472,11 @@
 </blockquote>
 <h2 id="项目需求"><a href="#项目需求" class="headerlink" title="项目需求"></a>项目需求</h2><blockquote>
 <p>项目需求：首先开发这个项目 目的是什么？</p>
-<ul>
-<li>开发这个项目的初衷是为了</li>
-</ul>
 </blockquote>
-<h2 id="项目UI"><a href="#项目UI" class="headerlink" title="项目UI"></a>项目UI</h2><h2 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h2><h2 id="项目开发"><a href="#项目开发" class="headerlink" title="项目开发"></a>项目开发</h2><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><h3 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h3><h2 id="项目提交"><a href="#项目提交" class="headerlink" title="项目提交"></a>项目提交</h2><h2 id="项目总结"><a href="#项目总结" class="headerlink" title="项目总结"></a>项目总结</h2>
+<h2 id="项目UI"><a href="#项目UI" class="headerlink" title="项目UI"></a>项目UI</h2><h2 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h2><h3 id="使用iconfont字体图标"><a href="#使用iconfont字体图标" class="headerlink" title="使用iconfont字体图标"></a>使用iconfont字体图标</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* app.wxss */</span></span><br><span class="line">    @<span class="keyword">font-face</span> &#123;</span><br><span class="line">      <span class="attribute">font-family</span>: <span class="string">'iconfont'</span>;  <span class="comment">/* project id 431644 */</span></span><br><span class="line">      <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.eot'</span>);</span><br><span class="line">      <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.eot?#iefix'</span>) <span class="built_in">format</span>(<span class="string">'embedded-opentype'</span>),</span><br><span class="line">      <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.woff'</span>) <span class="built_in">format</span>(<span class="string">'woff'</span>),</span><br><span class="line">      <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.ttf'</span>) <span class="built_in">format</span>(<span class="string">'truetype'</span>),</span><br><span class="line">      <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.svg#iconfont'</span>) <span class="built_in">format</span>(<span class="string">'svg'</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*初始化样式*/</span></span><br><span class="line"><span class="selector-class">.icon</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'iconfont'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.icon-home</span><span class="selector-pseudo">::before</span>&#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">"\e600"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"icon icon-home"</span>&gt;</span><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="项目开发"><a href="#项目开发" class="headerlink" title="项目开发"></a>项目开发</h2><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><h3 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h3><h2 id="项目提交"><a href="#项目提交" class="headerlink" title="项目提交"></a>项目提交</h2><h2 id="项目总结"><a href="#项目总结" class="headerlink" title="项目总结"></a>项目总结</h2>
       
     </div>
     
@@ -622,7 +622,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -644,7 +644,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -706,7 +706,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目需求"><span class="nav-number">1.</span> <span class="nav-text">项目需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目UI"><span class="nav-number">2.</span> <span class="nav-text">项目UI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目配置"><span class="nav-number">3.</span> <span class="nav-text">项目配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目开发"><span class="nav-number">4.</span> <span class="nav-text">项目开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端"><span class="nav-number">4.1.</span> <span class="nav-text">前端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台"><span class="nav-number">4.2.</span> <span class="nav-text">后台</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目提交"><span class="nav-number">5.</span> <span class="nav-text">项目提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目总结"><span class="nav-number">6.</span> <span class="nav-text">项目总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目需求"><span class="nav-number">1.</span> <span class="nav-text">项目需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目UI"><span class="nav-number">2.</span> <span class="nav-text">项目UI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目配置"><span class="nav-number">3.</span> <span class="nav-text">项目配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用iconfont字体图标"><span class="nav-number">3.1.</span> <span class="nav-text">使用iconfont字体图标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目开发"><span class="nav-number">4.</span> <span class="nav-text">项目开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端"><span class="nav-number">4.1.</span> <span class="nav-text">前端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台"><span class="nav-number">4.2.</span> <span class="nav-text">后台</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目提交"><span class="nav-number">5.</span> <span class="nav-text">项目提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目总结"><span class="nav-number">6.</span> <span class="nav-text">项目总结</span></a></li></ol></div>
             
 
           </div>
