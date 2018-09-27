@@ -92,7 +92,7 @@
 <meta property="og:description" content="学习小程序几天了，基本上都是在上班休息之余通过阅读官方文档来学的，所以有些 `API` 还不是很清楚。随着小程序的火热，小程序开发貌似成为了很多公司招聘需求，现在我意识到，如果我将自己的简历或者主页做成一个小程序来维护的话，拿出主页的时候会不会显得‘高大上’...">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg">
-<meta property="og:updated_time" content="2018-07-25T02:54:05.062Z">
+<meta property="og:updated_time" content="2018-09-27T06:53:00.608Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序 从零开始了解微信小程序的开发（二）">
 <meta name="twitter:description" content="学习小程序几天了，基本上都是在上班休息之余通过阅读官方文档来学的，所以有些 `API` 还不是很清楚。随着小程序的火热，小程序开发貌似成为了很多公司招聘需求，现在我意识到，如果我将自己的简历或者主页做成一个小程序来维护的话，拿出主页的时候会不会显得‘高大上’...">
@@ -170,7 +170,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">从一个学设计的大学生到工作在前端开发岗位，这个过程只有自己知道有多累。</p>
+        <p class="site-subtitle">The biggest advantage of endeavor lies in that you can choose life you want rather than being forced to reconcile yourself to your current situation.</p>
       
   </div>
 
@@ -410,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  183
+                  1,695
                 </span>
               
 
@@ -426,7 +426,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  8
                 </span>
               
             </div>
@@ -454,7 +454,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg" rel="gallery_cjm5xb8n30008pot146rpqfrq"
+                 href="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg" rel="gallery_cjmk83s020007ikt1a8o7tetk"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg" itemprop="contentUrl"/>
               </a>
@@ -476,7 +476,89 @@
 <h2 id="项目UI"><a href="#项目UI" class="headerlink" title="项目UI"></a>项目UI</h2><h2 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h2><h3 id="使用iconfont字体图标"><a href="#使用iconfont字体图标" class="headerlink" title="使用iconfont字体图标"></a>使用iconfont字体图标</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* app.wxss */</span></span><br><span class="line">    @<span class="keyword">font-face</span> &#123;</span><br><span class="line">      <span class="attribute">font-family</span>: <span class="string">'iconfont'</span>;  <span class="comment">/* project id 431644 */</span></span><br><span class="line">      <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.eot'</span>);</span><br><span class="line">      <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.eot?#iefix'</span>) <span class="built_in">format</span>(<span class="string">'embedded-opentype'</span>),</span><br><span class="line">      <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.woff'</span>) <span class="built_in">format</span>(<span class="string">'woff'</span>),</span><br><span class="line">      <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.ttf'</span>) <span class="built_in">format</span>(<span class="string">'truetype'</span>),</span><br><span class="line">      <span class="built_in">url</span>(<span class="string">'//at.alicdn.com/t/font_431644_aahynh26y6lp7gb9.svg#iconfont'</span>) <span class="built_in">format</span>(<span class="string">'svg'</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*初始化样式*/</span></span><br><span class="line"><span class="selector-class">.icon</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'iconfont'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.icon-home</span><span class="selector-pseudo">::before</span>&#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">"\e600"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"icon icon-home"</span>&gt;</span><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="项目开发"><a href="#项目开发" class="headerlink" title="项目开发"></a>项目开发</h2><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><h3 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h3><h2 id="项目提交"><a href="#项目提交" class="headerlink" title="项目提交"></a>项目提交</h2><h2 id="项目总结"><a href="#项目总结" class="headerlink" title="项目总结"></a>项目总结</h2>
+<h2 id="项目开发"><a href="#项目开发" class="headerlink" title="项目开发"></a>项目开发</h2><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><h3 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h3><h4 id="在自己的服务器上部署小程序后台环境-node-php（wamp）-mysql数据库"><a href="#在自己的服务器上部署小程序后台环境-node-php（wamp）-mysql数据库" class="headerlink" title="在自己的服务器上部署小程序后台环境 node/php（wamp）+ mysql数据库"></a>在自己的服务器上部署小程序后台环境 node/php（wamp）+ mysql数据库</h4><blockquote>
+<p>node环境的搭建</p>
+</blockquote>
+<p>说起<code>node</code>环境的搭建真是一步一个坑的踩过来，所以赶紧写下来备忘。</p>
+<ul>
+<li><ol>
+<li>首先在腾讯云上搞个服务器，（域名备案，并且生成ssl证书下载）；</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>随后需要在服务器上安装node环境 ，由于小白，所以选择服务器的系统时用的是window server2012版本。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>安装好node之后安装<code>Nginx</code>反向代理，这里是最坑的，配置这个反向代理的坑点如下</li>
+</ol>
+<ul>
+<li><ul>
+<li>1.下载<code>nginx1.8.1</code>版本,解压后上传到服务器。</li>
+</ul>
+</li>
+<li><ul>
+<li>2.这里配置<code>nginx.conf</code>这个文件时 <strong>千万不要用!</strong> <strong>千万不要用!</strong> <strong>千万不要用!</strong> （重要的事情说三遍！）记事本打开！最好使用IDE编辑器打开文件。</li>
+</ul>
+</li>
+<li><ul>
+<li>3.配置文件内容如下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  &apos;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &apos;</span><br><span class="line">    #                  &apos;$status $body_bytes_sent &quot;$http_referer&quot; &apos;</span><br><span class="line">    #                  &apos;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&apos;;</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line">    upstream app_weapp &#123;</span><br><span class="line">        server 172.17.0.9:443;</span><br><span class="line">        keepalive 8;</span><br><span class="line">    &#125;</span><br><span class="line">    upstream app_wxapp &#123;</span><br><span class="line">        server 182.254.140.217:443;</span><br><span class="line">        keepalive 8;</span><br><span class="line">    &#125;</span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    gzip  on;</span><br><span class="line"></span><br><span class="line">    server &#123;</span><br><span class="line">        listen       443;</span><br><span class="line">        server_name  www.mrsxin.cn;</span><br><span class="line"></span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">            root   html;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line"></span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        # proxy the PHP scripts to Apache listening on 127.0.0.1:80</span><br><span class="line">        #</span><br><span class="line">        #location ~ \.php$ &#123;</span><br><span class="line">        #    proxy_pass   http://127.0.0.1;</span><br><span class="line">        #&#125;</span><br><span class="line"></span><br><span class="line">        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span><br><span class="line">        #</span><br><span class="line">        #location ~ \.php$ &#123;</span><br><span class="line">        #    root           html;</span><br><span class="line">        #    fastcgi_pass   127.0.0.1:9000;</span><br><span class="line">        #    fastcgi_index  index.php;</span><br><span class="line">        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span><br><span class="line">        #    include        fastcgi_params;</span><br><span class="line">        #&#125;</span><br><span class="line"></span><br><span class="line">        # deny access to .htaccess files, if Apache&apos;s document root</span><br><span class="line">        # concurs with nginx&apos;s one</span><br><span class="line">        #</span><br><span class="line">        #location ~ /\.ht &#123;</span><br><span class="line">        #    deny  all;</span><br><span class="line">        #&#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    # another virtual host using mix of IP-, name-, and port-based configuration</span><br><span class="line">    #</span><br><span class="line">    #server &#123;</span><br><span class="line">    #    listen       8000;</span><br><span class="line">    #    listen       somename:8080;</span><br><span class="line">    #    server_name  somename  alias  another.alias;</span><br><span class="line"></span><br><span class="line">    #    location / &#123;</span><br><span class="line">    #        root   html;</span><br><span class="line">    #        index  index.html index.htm;</span><br><span class="line">    #    &#125;</span><br><span class="line">    #&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    # HTTPS server</span><br><span class="line">    #</span><br><span class="line">    # server &#123;</span><br><span class="line">    #    listen       443 ssl;</span><br><span class="line">    #    server_name  www.mrsxin.cn;</span><br><span class="line">    # 此处的文件可以通过腾讯云申请免费的安全SSL证书。申请成功后下载解压将nginx下的文件拷贝至nginx安装目录下</span><br><span class="line">    #    ssl_certificate      /wamp64/www/nginx-1.8.1/html/1_www.mrsxin.cn_bundle.crt;</span><br><span class="line">    #    ssl_certificate_key  /wamp64/www/nginx-1.8.1/html/2_www.mrsxin.cn.key;</span><br><span class="line"></span><br><span class="line">    #    ssl_session_cache    shared:SSL:1m;</span><br><span class="line">    #    ssl_session_timeout  5m;</span><br><span class="line"></span><br><span class="line">    #    ssl_ciphers  HIGH:!aNULL:!MD5;</span><br><span class="line">    #    ssl_prefer_server_ciphers  on;</span><br><span class="line"></span><br><span class="line">    #    location / &#123;</span><br><span class="line">    #        root   html;</span><br><span class="line">    #        index  index.html index.htm;</span><br><span class="line">    #    &#125;</span><br><span class="line">    # &#125;</span><br><span class="line">    server &#123;</span><br><span class="line">        listen      443 ssl;</span><br><span class="line">        server_name www.mrsxin.cn;</span><br><span class="line"></span><br><span class="line">        # ssl on;</span><br><span class="line"></span><br><span class="line">        ssl_certificate           /wamp64/www/nginx-1.8.1/html/server/bin/1_www.mrsxin.cn_bundle.crt;</span><br><span class="line">        # 此处的文件可以通过腾讯云申请免费的安全SSL证书。申请成功后下载解压将nginx下的文件拷贝至nginx安装目录下</span><br><span class="line">        ssl_certificate_key       /wamp64/www/nginx-1.8.1/html/server/bin/2_www.mrsxin.cn.key;</span><br><span class="line">        ssl_session_timeout       5m;</span><br><span class="line">        ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">        ssl_ciphers               ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA;</span><br><span class="line">        ssl_session_cache         shared:SSL:50m;</span><br><span class="line">        ssl_prefer_server_ciphers on;</span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">            proxy_pass https://localhost:520/;</span><br><span class="line">            proxy_http_version 1.1;</span><br><span class="line">            proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">            proxy_set_header Connection &apos;upgrade&apos;;</span><br><span class="line">            proxy_set_header Host $host;</span><br><span class="line">            proxy_cache_bypass $http_upgrade;</span><br><span class="line">            # root    /wamp64/www/nginx-1.8.1/html</span><br><span class="line">            # index   server.js</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li>4.配置好此文件后 在<code>nginx</code>安装文件夹下使用命令行<code>nginx -s reload</code>命令</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>mysql的安装</p>
+</blockquote>
+<p>转自：<a href="https://blog.csdn.net/u012475786/article/details/71321911" target="_blank" rel="noopener">正确解法 💎 点此查看</a></p>
+<ol>
+<li><p>Npm提供了mysql数据库驱动模块的，通过npm install –save-dev mysql将mysql模块安装到本项目，注意npm中mysql模块只支持mysql 5.7+版本的数据库，接下来就是安装从mysql官网安装mysql数据库软件了；</p>
+</li>
+<li><p>将下载的mysql压缩包文件解压并放置电脑的任何目录中，我的解压目录D:\ mysql-5.7.18</p>
+</li>
+<li><p>添加环境变量：右键单击计算机&gt;属性&gt;高级系统设置&gt;环境变量；在系统变量添加MYSQL_HOME，并mysql路径设置为变量值；</p>
+</li>
+<li>同时在系统变量里找到path，选择编辑，在原有值末尾添加数据库的安装目录中的bin文件夹路径。<code>%MYSQL_HOME%\bin</code></li>
+<li>添加配置文件： 在MySQL的安装目录（例如D: \mysql-5.7.18）中，新建my.ini文件（注意扩展名是ini），并用记事本打开进行编辑。</li>
+<li><p>初始化数据库： 以管理员自身份打开CMD执行以下命令（注意必须以管理员身份打开，否则报错）</p>
+<p>mysqld –initialize –user=mysql –console</p>
+<p>在控制台消息尾部会出现随机生成的初始密码，将打印出来的初始密码保存起来，不要忘记</p>
+<p>如果上述命令运行不成功请用以下命令代替：</p>
+<p>%MYSQL_HOME%\bin\mysqld –initialize –user=mysql –console</p>
+<p>如果仍然不成功请检查第２步</p>
+</li>
+<li><p>将MySQL添加到系统服务，以管理员自身份打开CMD执行以下命令（注意必须以管理员身份打开，否则报错）</p>
+<p>mysqld –install MySQL</p>
+<p>net start MySQL</p>
+<p>安装成功，则显示“服务已启动成功”</p>
+<p>如果上述命令运行不成功，可以用以下命令代替：</p>
+<p>%MYSQL_HOME%\bin\mysqld –install MySQL</p>
+<p>net start MySQL</p>
+<p>安装成功，则显示“服务已启动成功”</p>
+<p>如果仍然不成功请检查第２步</p>
+</li>
+<li><p>启动MySQL并修改密码，在CMD控制台里执行命令  mysql -u root -p </p>
+<p>回车执行后，输入刚才记录的随机密码</p>
+<p>执行成功后，控制台显示 mysql&gt;，则表示进入mysql</p>
+<ol>
+<li><p>输入命令set password for root@localhost =password(‘123’);（注意分号）</p>
+</li>
+<li><p>输入命令select version();（注意分号）查看版本号</p>
+</li>
+<li><p>输入命令show global variables like “port”;（注意分号）查看端口</p>
+</li>
+<li><p>输入命令status;（注意分号）查看mysql基本状态信息</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="项目提交"><a href="#项目提交" class="headerlink" title="项目提交"></a>项目提交</h2><h2 id="项目总结"><a href="#项目总结" class="headerlink" title="项目总结"></a>项目总结</h2>
       
     </div>
     
@@ -612,7 +694,7 @@
                 alt="Mr.Denp" />
             
               <p class="site-author-name" itemprop="name">Mr.Denp</p>
-              <p class="site-description motion-element" itemprop="description">一杯敬朝阳，一杯敬月光。这也只是个开始，以后的每一天我要感谢现在努力的自己！守着善良，成长。</p>
+              <p class="site-description motion-element" itemprop="description">努力的最大好处，就在于你可以选择你想要的生活，而不是被迫随遇而安。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -706,7 +788,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目需求"><span class="nav-number">1.</span> <span class="nav-text">项目需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目UI"><span class="nav-number">2.</span> <span class="nav-text">项目UI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目配置"><span class="nav-number">3.</span> <span class="nav-text">项目配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用iconfont字体图标"><span class="nav-number">3.1.</span> <span class="nav-text">使用iconfont字体图标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目开发"><span class="nav-number">4.</span> <span class="nav-text">项目开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端"><span class="nav-number">4.1.</span> <span class="nav-text">前端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台"><span class="nav-number">4.2.</span> <span class="nav-text">后台</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目提交"><span class="nav-number">5.</span> <span class="nav-text">项目提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目总结"><span class="nav-number">6.</span> <span class="nav-text">项目总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目需求"><span class="nav-number">1.</span> <span class="nav-text">项目需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目UI"><span class="nav-number">2.</span> <span class="nav-text">项目UI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目配置"><span class="nav-number">3.</span> <span class="nav-text">项目配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用iconfont字体图标"><span class="nav-number">3.1.</span> <span class="nav-text">使用iconfont字体图标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目开发"><span class="nav-number">4.</span> <span class="nav-text">项目开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端"><span class="nav-number">4.1.</span> <span class="nav-text">前端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台"><span class="nav-number">4.2.</span> <span class="nav-text">后台</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在自己的服务器上部署小程序后台环境-node-php（wamp）-mysql数据库"><span class="nav-number">4.2.1.</span> <span class="nav-text">在自己的服务器上部署小程序后台环境 node/php（wamp）+ mysql数据库</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目提交"><span class="nav-number">5.</span> <span class="nav-text">项目提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目总结"><span class="nav-number">6.</span> <span class="nav-text">项目总结</span></a></li></ol></div>
             
 
           </div>
