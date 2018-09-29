@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-08T09:45:39.368Z</updated>
+  <updated>2018-09-29T07:52:38.222Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端开发者调试面板 -- vConsole</title>
+    <link href="http://yoursite.com/2018/09/29/debug-plug/"/>
+    <id>http://yoursite.com/2018/09/29/debug-plug/</id>
+    <published>2018-09-29T07:31:02.000Z</published>
+    <updated>2018-09-29T07:52:38.222Z</updated>
+    
+    <summary type="html">
+    
+      这是一个轻量、可拓展、针对手机网页的前端开发者调试面板。
+    
+    </summary>
+    
+    
+      <category term="插件" scheme="http://yoursite.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="调试" scheme="http://yoursite.com/tags/%E8%B0%83%E8%AF%95/"/>
+    
+      <category term="vConsole" scheme="http://yoursite.com/tags/vConsole/"/>
+    
+  </entry>
   
   <entry>
     <title>axios 的封装</title>
