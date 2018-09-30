@@ -92,7 +92,7 @@
 <meta property="og:description" content="学习小程序几天了，基本上都是在上班休息之余通过阅读官方文档来学的，所以有些 `API` 还不是很清楚。随着小程序的火热，小程序开发貌似成为了很多公司招聘需求，现在我意识到，如果我将自己的简历或者主页做成一个小程序来维护的话，拿出主页的时候会不会显得‘高大上’...">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg">
-<meta property="og:updated_time" content="2018-09-27T06:53:00.608Z">
+<meta property="og:updated_time" content="2018-09-30T02:44:25.558Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序 从零开始了解微信小程序的开发（二）">
 <meta name="twitter:description" content="学习小程序几天了，基本上都是在上班休息之余通过阅读官方文档来学的，所以有些 `API` 还不是很清楚。随着小程序的火热，小程序开发貌似成为了很多公司招聘需求，现在我意识到，如果我将自己的简历或者主页做成一个小程序来维护的话，拿出主页的时候会不会显得‘高大上’...">
@@ -410,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,695
+                  1,866
                 </span>
               
 
@@ -426,7 +426,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8
+                  9
                 </span>
               
             </div>
@@ -454,7 +454,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg" rel="gallery_cjmn5d625001pkst1gp2qa9gh"
+                 href="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg" rel="gallery_cjmogwo7b001p68t1yqm56whv"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://mrdenp.github.io/2018/06/06/WeChatSmallProgram/WeChat.jpg" itemprop="contentUrl"/>
               </a>
@@ -558,6 +558,12 @@
 </ol>
 </li>
 </ol>
+<h3 id="使用node-hapi-https"><a href="#使用node-hapi-https" class="headerlink" title="使用node+hapi+https"></a>使用node+hapi+https</h3><blockquote>
+<p> 通常不直接在应用程序上处理https请求，但是Hapi。js可以在相同的API中处理http和https。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">var</span> Hapi = <span class="built_in">require</span>(<span class="string">'hapi'</span>);</span><br><span class="line"><span class="keyword">var</span> server = <span class="keyword">new</span> Hapi.Server();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> tls = &#123;</span><br><span class="line">  key: fs.readFileSync(<span class="string">'/etc/letsencrypt/live/example.com/privkey.pem'</span>),</span><br><span class="line">  cert: fs.readFileSync(<span class="string">'/etc/letsencrypt/live/example.com/cert.pem'</span>)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">server.connection(&#123;<span class="attr">address</span>: <span class="string">'0.0.0.0'</span>, <span class="attr">port</span>: <span class="number">443</span>, <span class="attr">tls</span>: tls &#125;);</span><br><span class="line">server.connection(&#123;<span class="attr">address</span>: <span class="string">'0.0.0.0'</span>, <span class="attr">port</span>: <span class="number">80</span> &#125;);</span><br><span class="line"></span><br><span class="line">server.route(&#123;</span><br><span class="line">    method: <span class="string">'GET'</span>,</span><br><span class="line">    path: <span class="string">'/'</span>,</span><br><span class="line">    handler: <span class="function"><span class="keyword">function</span> (<span class="params">request, reply</span>) </span>&#123;</span><br><span class="line">        reply(<span class="string">'Hello, world!'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">server.start(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Server running'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>也可以将所有http请求重定向到https:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (request.headers[<span class="string">'x-forwarded-proto'</span>] === <span class="string">'http'</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> reply()</span><br><span class="line">    .redirect(<span class="string">'https://'</span> + request.headers.host + request.url.path)</span><br><span class="line">    .code(<span class="number">301</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
 <h2 id="项目提交"><a href="#项目提交" class="headerlink" title="项目提交"></a>项目提交</h2><h2 id="项目总结"><a href="#项目总结" class="headerlink" title="项目总结"></a>项目总结</h2>
       
     </div>
@@ -788,7 +794,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目需求"><span class="nav-number">1.</span> <span class="nav-text">项目需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目UI"><span class="nav-number">2.</span> <span class="nav-text">项目UI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目配置"><span class="nav-number">3.</span> <span class="nav-text">项目配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用iconfont字体图标"><span class="nav-number">3.1.</span> <span class="nav-text">使用iconfont字体图标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目开发"><span class="nav-number">4.</span> <span class="nav-text">项目开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端"><span class="nav-number">4.1.</span> <span class="nav-text">前端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台"><span class="nav-number">4.2.</span> <span class="nav-text">后台</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在自己的服务器上部署小程序后台环境-node-php（wamp）-mysql数据库"><span class="nav-number">4.2.1.</span> <span class="nav-text">在自己的服务器上部署小程序后台环境 node/php（wamp）+ mysql数据库</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目提交"><span class="nav-number">5.</span> <span class="nav-text">项目提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目总结"><span class="nav-number">6.</span> <span class="nav-text">项目总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目需求"><span class="nav-number">1.</span> <span class="nav-text">项目需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目UI"><span class="nav-number">2.</span> <span class="nav-text">项目UI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目配置"><span class="nav-number">3.</span> <span class="nav-text">项目配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用iconfont字体图标"><span class="nav-number">3.1.</span> <span class="nav-text">使用iconfont字体图标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目开发"><span class="nav-number">4.</span> <span class="nav-text">项目开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端"><span class="nav-number">4.1.</span> <span class="nav-text">前端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台"><span class="nav-number">4.2.</span> <span class="nav-text">后台</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在自己的服务器上部署小程序后台环境-node-php（wamp）-mysql数据库"><span class="nav-number">4.2.1.</span> <span class="nav-text">在自己的服务器上部署小程序后台环境 node/php（wamp）+ mysql数据库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用node-hapi-https"><span class="nav-number">4.3.</span> <span class="nav-text">使用node+hapi+https</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目提交"><span class="nav-number">5.</span> <span class="nav-text">项目提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目总结"><span class="nav-number">6.</span> <span class="nav-text">项目总结</span></a></li></ol></div>
             
 
           </div>
