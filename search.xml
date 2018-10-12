@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[一些小效果的实现]]></title>
+    <url>%2F2018%2F10%2F12%2Fdemo%2F</url>
+    <content type="text"><![CDATA[效果合集纯css实现’融合‘ filter 废话不多说直接上代码 123456789101112131415161718192021222324252627282930313233343536&lt;style type="text/css"&gt; .box &#123; filter: contrast(20); background: #fff; padding: 10px; &#125; .left, .right &#123; display: inline-block; width: 100px; height: 100px; border-radius: 50%; filter: blur(6px); &#125; .left &#123; background-color: black; position: absolute; left: 0; animation: move 10s infinite alternate; &#125; @keyframes move &#123; 100% &#123; left: 250px; &#125; &#125; .right &#123; background-color: #ff792e; &#125; &lt;/style&gt; &lt;body&gt; &lt;div class="box"&gt; &lt;div class="left"&gt;&lt;/div&gt; &lt;div class="right"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/body&gt;]]></content>
+      <categories>
+        <category>小效果</category>
+      </categories>
+      <tags>
+        <tag>css js 效果</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[前端开发者调试面板 -- vConsole]]></title>
     <url>%2F2018%2F09%2F29%2Fdebug-plug%2F</url>
     <content type="text"><![CDATA[#Vconsole 安装1.下载模块 使用 npm 安装1npm install vconsole 然后复制 dist/vconsole.min.js 到自己的项目中。 2.引入模块 在vue中下载安装包后 可以在main.js中引入12import Vconsole from 'vconsole';const vConsole = new Vconsole(); 在HTML里引入（H5）123456&lt;head&gt; &lt;script src="path/to/vconsole.min.js"&gt;&lt;/script&gt; &lt;script&gt; var vConsole = new VConsole(); &lt;/script&gt;&lt;/head&gt; 在使用AMD/CMD规范中使用12var VConsole = require('path/to/vconsole.min.js');var vConsole = new VConsole(); 3.使用初始化 &amp; 配置12 var vConsole = new VConsole(option);//option 是一个选填的 object 对象 使用 setOption() 来更新 option：123vConsole.setOption('maxLogNumber', 5000);// 或者：vConsole.setOption(&#123;maxLogNumber: 5000&#125;); vConsole.option 键名 类型 可选 默认值 描述 defaultPlugins Array true [‘system’, ‘network’, ‘element’, ‘storage’] 需要自动初始化并加载的内置插件。 onReady Function true 回调方法，当 vConsole 完成初始化并加载完内置插件后触发。 onClearLog Function true 回调方法，点击 Log 或 System 面板的 “Clear” 按钮后触发。 maxLogNumber Number true 1000 超出上限的日志会被自动清除。 disableLogScrolling Boolean true 若为 false，有新日志时面板将不会自动滚动到底部。]]></content>
