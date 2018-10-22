@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Mr.Denp ❤ 前端到全栈的成长之路</title>
+  <title>Mr.Denp ❤ 代码启示录</title>
   
   <subtitle>The biggest advantage of endeavor lies in that you can choose life you want rather than being forced to reconcile yourself to your current situation.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-12T09:55:15.084Z</updated>
+  <updated>2018-10-16T08:52:46.676Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Phaser  H5游戏框架</title>
+    <link href="http://yoursite.com/2018/10/16/PhaserGameFrameWork/"/>
+    <id>http://yoursite.com/2018/10/16/PhaserGameFrameWork/</id>
+    <published>2018-10-16T07:54:53.000Z</published>
+    <updated>2018-10-16T08:52:46.676Z</updated>
+    
+    <summary type="html">
+    
+      之前项目有用过一次这个游戏框架，当时项目比较急 没怎么好好看这个框架的文档，现在需要用这个框架写个demo，用来当作以后使用的模板，demo里会把能想到的点都用到，作为以后需要使用时的一个备份笔记。
+    
+    </summary>
+    
+      <category term="游戏框架" scheme="http://yoursite.com/categories/%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Phaser" scheme="http://yoursite.com/categories/%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6/Phaser/"/>
+    
+      <category term="学习笔记" scheme="http://yoursite.com/categories/%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6/Phaser/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一些小效果的实现</title>
     <link href="http://yoursite.com/2018/10/12/demo/"/>
     <id>http://yoursite.com/2018/10/12/demo/</id>
     <published>2018-10-12T09:51:35.000Z</published>
-    <updated>2018-10-12T09:55:15.084Z</updated>
+    <updated>2018-10-18T07:22:17.654Z</updated>
     
     <summary type="html">
     
@@ -198,7 +222,7 @@
     <link href="http://yoursite.com/2018/06/15/compatibility/"/>
     <id>http://yoursite.com/2018/06/15/compatibility/</id>
     <published>2018-06-15T11:16:20.000Z</published>
-    <updated>2018-09-17T06:40:36.675Z</updated>
+    <updated>2018-10-18T08:08:34.370Z</updated>
     
     <summary type="html">
     
