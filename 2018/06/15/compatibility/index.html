@@ -92,7 +92,7 @@
 <meta property="og:description" content="在工作项目中的一些兼容问题，尤其是ios，各种BUG啊，很痛苦，发现一个，更新一个.....">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg">
-<meta property="og:updated_time" content="2018-10-23T05:52:16.498Z">
+<meta property="og:updated_time" content="2018-10-23T05:55:40.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="compatibility 工作中遇到的一些问题">
 <meta name="twitter:description" content="在工作项目中的一些兼容问题，尤其是ios，各种BUG啊，很痛苦，发现一个，更新一个.....">
@@ -465,7 +465,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" rel="gallery_cjnlbduvm0030est1et258olt"
+                 href="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" rel="gallery_cjnlbglyf002zq8t1oa0utkgd"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" itemprop="contentUrl"/>
               </a>
@@ -481,7 +481,7 @@
         <h1 id="兼容"><a href="#兼容" class="headerlink" title="兼容"></a>兼容</h1><h2 id="IOS"><a href="#IOS" class="headerlink" title="IOS"></a>IOS</h2><ol>
 <li><code>new Date()</code> 在ios中不识别 <code>2018-06-14</code> 中的<code>‘-’</code>，只识别<code>‘/’</code>，当时做项目的时候在模拟机上测试没有问题，安卓也没有问题，但是一上ios真机就bug了，很难受，最后还是<code>alert()</code> 出 <code>new Date(2018-06-14 23:00:00)</code> 的时候为 <code>invalid date</code>,这才发现问题。</li>
 <li><code>let</code> 关键字 不兼容9.3以下版本</li>
-<li>ios中，输入框获得焦点时，页面输入框被遮盖，定位的元素位置错乱：<br><img src="https://mrdenp.github.io/2018/06/15/compatibility/1.jpg" alt=""><br><img src="https://mrdenp.github.io/2018/06/15/compatibility/2.jpg" alt=""><br>当页input存在于吸顶或者吸底元素中时，用户点击输入框，输入法弹出后，fiexd失效，页面中定位好的元素随屏幕滚动。</li>
+<li>ios中，输入框获得焦点时，页面输入框被遮盖，定位的元素位置错乱：<br><img src="https://mrdenp.github.io/2018/06/15/compatibility/1.jpg" alt=""><br>当页input存在于吸顶或者吸底元素中时，用户点击输入框，输入法弹出后，fiexd失效，页面中定位好的元素随屏幕滚动。</li>
 </ol>
 <p>针对这个问题，我们一起来看下以下几种方案：</p>
 <p><strong>方案一： Web API 接口 ：scrollIntoView 的应用，将input输入框显示在可视区域。</strong></p>
