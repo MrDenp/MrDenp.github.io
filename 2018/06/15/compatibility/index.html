@@ -92,7 +92,7 @@
 <meta property="og:description" content="在工作项目中的一些兼容问题，尤其是ios，各种BUG啊，很痛苦，发现一个，更新一个.....">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg">
-<meta property="og:updated_time" content="2018-10-23T05:55:40.559Z">
+<meta property="og:updated_time" content="2018-11-20T01:40:18.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="compatibility 工作中遇到的一些问题">
 <meta name="twitter:description" content="在工作项目中的一些兼容问题，尤其是ios，各种BUG啊，很痛苦，发现一个，更新一个.....">
@@ -421,7 +421,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3,242
+                  3,530
                 </span>
               
 
@@ -437,7 +437,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  15
+                  16
                 </span>
               
             </div>
@@ -465,7 +465,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" rel="gallery_cjnlbglyf002zq8t1oa0utkgd"
+                 href="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" rel="gallery_cjop4vdau0031f8t1ycmjrnf8"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://mrdenp.github.io/2018/06/15/compatibility/resource.jpg" itemprop="contentUrl"/>
               </a>
@@ -628,7 +628,10 @@
 <li>在 stylus 中的样式穿透： <code>&gt;&gt;&gt;</code>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.wrapper &gt;&gt;&gt; .swiper-pagination-bullet-active</span><br><span class="line">                           background: #fff</span><br><span class="line">```                 </span><br><span class="line">- 在 sass 和 less 的样式穿透 使用 `/deep/`</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>.wrapper /deep/ .swiper-pagination-bullet-active{<br>                                      background: #fff;<br>                                    }<br><code>`</code></p>
+<p>.wrapper /deep/ .swiper-pagination-bullet-active{<br>                                      background: #fff;<br>                                    }<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">##### vue组件的递归</span><br><span class="line">&gt; 首先来说说什么是递归组件，简单来说就是在组件内部使用自身组件，和函数的递归一样样的。一般这样的递归组件会用在哪里呢？肯定是在组件渲染数据的时候数据结构是一层嵌套一层，例如tree状数据结构。</span><br><span class="line">```vue</span><br><span class="line">    &lt;template&gt;</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;div class=&quot;list-item&quot; v-for=&quot;(item, index) in list&quot; :key=&quot;index&quot;&gt;</span><br><span class="line">                &lt;div class=&quot;item-name&quot;&gt;</span><br><span class="line">                    &lt;span&gt;&#123;&#123;item.name&#125;&#125;&lt;/span&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">                &lt;div v-if=&quot;item.children&quot; class=&quot;children-item&quot;&gt;</span><br><span class="line">                    &lt;list :list=&quot;item.children&quot;&gt;&lt;/list&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;/template&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    export default &#123;</span><br><span class="line">      name: &quot;List&quot;,</span><br><span class="line">      props: &#123;</span><br><span class="line">        list: Array</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>这里的 <code>props</code> 中的 <code>list</code> 作为父组件传递给子组件的数据，通过 <code>props</code> 属性接收。仔细看也会注意到嵌套第二层的数据时会有个 <code>v-if</code> 的判断，当子层数据存在时，会再次渲染递归组件，这样就会形成无论数据嵌套多少层，我们只需要写一次代码。 并且在组件内部调用组件时不需要引用，直接调用起，这样更加方便。</p>
+</blockquote>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3>
       
     </div>
