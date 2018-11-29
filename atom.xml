@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-29T09:11:08.468Z</updated>
+  <updated>2018-11-29T09:36:23.025Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,17 +20,17 @@
     <title></title>
     <link href="http://yoursite.com/2018/11/29/Canvas/"/>
     <id>http://yoursite.com/2018/11/29/Canvas/</id>
-    <published>2018-11-29T09:11:08.463Z</published>
-    <updated>2018-11-29T09:11:08.468Z</updated>
+    <published>2018-11-29T09:36:23.021Z</published>
+    <updated>2018-11-29T09:36:23.025Z</updated>
     
     <summary type="html">
     
       &lt;hr&gt;
-&lt;p&gt;title: Canvas&lt;br&gt;date: 2018-11-21 09:15:54&lt;br&gt;categories:&lt;/p&gt;
+&lt;p&gt;title: ‘Canvas’&lt;br&gt;date: 2018-11-21 09:15:54&lt;br&gt;categories:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;- canvas绘制海报
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;tags:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;- canvas
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;description:&lt;code&gt;canvas&lt;/code&gt; 在现代开发中的应用越来越多，比如说 将页面绘制成海报并保存成图片，这样的需求越来越多。还有 使用 &lt;code&gt;canvas&lt;/code&gt; 绘制数据结构图，尤其是在大数据分析的项目中，canvas 几乎成为表现数据的一种常态。最近公司的项目中多处用到了 &lt;code&gt;canvas&lt;/code&gt; 。故此，留下此篇文章以作备忘。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;description: &lt;code&gt;canvas&lt;/code&gt; 在现代开发中的应用越来越多，比如说 将页面绘制成海报并保存成图片，这样的需求越来越多。还有 使用 &lt;code&gt;canvas&lt;/code&gt; 绘制数据结构图，尤其是在大数据分析的项目中，canvas 几乎成为表现数据的一种常态。最近公司的项目中多处用到了 &lt;code&gt;canvas&lt;/code&gt; 。故此，留下此篇文章以作备忘。&lt;/p&gt;
     
     </summary>
     
