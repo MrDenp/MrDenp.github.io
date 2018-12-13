@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[跨域]]></title>
+    <url>%2F2018%2F12%2F13%2Fjsonp%2F</url>
+    <content type="text"><![CDATA[首先, 更正几个常见的错误认识: 同源策略是浏览器的行为, 和 js 关系不大. 所谓跨域是指请求发起方页面所在的 url 与访问的 api 存在协议, 域名, 端口中任意一个不同即视为跨域. 并不单单是指域名. 跨域这个东西, 日常工作中并不是很常用. 你想, 谁会闲的没事儿干总是请求人家别人的 api 去. 不受限制的外域资源加载情况有以下几种: script link img video object embed applet font-face 有的浏览器允许, 有的禁止 frame jsonp 前端代码实现 创建一个 class 类 123456789101112131415161718192021222324252627282930313233class Jsonp &#123; constructor(url, cb)&#123; this.callbackName = 'jsonp_' + Date.now() this.cb = cb this.url = url this.init() &#125; init()&#123; if(~this.url.indexOf('?')) &#123; this.url = this.url + '&amp;callback=' + this.callbackName &#125; else &#123; this.url = this.url + '?callback=' + this.callbackName &#125; this.createCallback() this.createScript() &#125; createScript() &#123; var script = document.createElement('script') script.src = this.url script.onload = function() &#123; this.remove() &#125; document.body.appendChild(script) &#125; createCallback()&#123; window[this.callbackName] = this.cb &#125;&#125;/* 调用方法 */new Jsonp('http://localhost:8800/users/', function(data) &#123; console.log(data) &#125;) 后端返回示例 12/* Node 接口 返回数据的方式 */ res.send(`$&#123;queryObj.callback&#125;(&#123;name: 'quanquan', friend: 'guiling'&#125;)`);]]></content>
+      <categories>
+        <category>跨域</category>
+        <category>jsonp实现一个类</category>
+      </categories>
+      <tags>
+        <tag>jsonp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>%2F2018%2F11%2F29%2FCanvas%2F</url>
     <content type="text"><![CDATA[title: ‘Canvas’date: 2018-11-21 09:15:54categories: - canvas绘制海报 tags: - canvas description: canvas 在现代开发中的应用越来越多，比如说 将页面绘制成海报并保存成图片，这样的需求越来越多。还有 使用 canvas 绘制数据结构图，尤其是在大数据分析的项目中，canvas 几乎成为表现数据的一种常态。最近公司的项目中多处用到了 canvas 。故此，留下此篇文章以作备忘。 Canvas什么是canvas？ &lt;canvas&gt; 是 HTML5 新增的元素，可用于通过使用 JavaScript 中的脚本来绘制图形。例如，它可以用于绘制图形、制作照片、创建动画，甚至可以进行实时视频处理或渲染。 注意 这里的canvas只是一个画布，绘图功能还是需要使用JS语言 一句话总结什么是 canvas什么是 Canvas？Canvas 是为了解决 Web 页面中只能显示静态图片这个问题而提出的，一个可以使用 JavaScript 等脚本语言向其中绘制图像的 HTML 标签。 canvas 可以实现哪些需求绘制图表 绘制图表是canvas应用最多的 因为 Canvas 通过 JavaScript 可以动态传入参数绘制图形，所以我们可以使用 Canvas 作为容器，通过 JavaScript 动态传入的参数将数据以图表的形式显示出来。 小游戏 基本上所有的 HTML5 游戏引擎都是基于 Canvas 开发的 首先是因为 Canvas 不需要借助任何插件就可以在网页中绘图。并且其强大的绘图 API 可以操纵页面上的每一个元素。 活动页面 大转盘抽奖 刮刮乐等等效果 小特效 粒子特效canvas基础创建画布1&lt;canvas id="canvas" width="400" height="400"&gt;&lt;/canvas&gt; 初始化画布//初始化画布 var canvas = document.getElementById("canvas"); var context = canvas.getContext("2d"); //开始绘制 beginPath() 开始路径绘制 closePath() 结束路径绘制 context.beginPath(); context.arc(100, 100, 50, 0, Math.PI * 2, true); context.closePath(); context.fillStyle = 'rgb(255,255,255)'; context.fill(); 绘制图形 arc(x, y, radius, startAngle, endAngle, anticlockwise) rect(x, y, width, height) 绘制矩形 fillRect(x, y, width, height) 绘制填充矩形 strokeRect(x, y, width, height) 绘制描边矩形 clearRect(x, y, width, height) 清除指定矩形区域 stroke() 描边 fill() 填充 moveTo(x, y) 绘制不连续的路径 lineTo(x, y) 绘制线 quadraticCurveTo(cp1x, cp1y, x, y) 绘制 二次贝塞尔曲线 cp1x,cp1y为一个控制点 x ,y 为结束点 bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y) 绘制 三次贝塞尔曲线 cp1x,cp1y为控制点一，cp2x,cp2y为控制点二，x,y为结束点。添加样式 fillStyle = color 设置图形的填充颜色。 strokeStyle = color 设置图形轮廓的颜色。 globalAlpha = transparencyValue 这个属性影响到 canvas 里所有图形的透明度，有效的值范围是 0.0 （完全透明）到 1.0（完全不透明），默认是 1.0。 lineWidth = value 设置线条宽度 lineCap = type 设置线条末端样式 lineJoin = type 设定线条与线条间接合处的样式 lineWidth = value 线宽 lineWidth = value 线宽]]></content>

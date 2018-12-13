@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-29T09:36:23.025Z</updated>
+  <updated>2018-12-13T08:45:38.052Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>跨域</title>
+    <link href="http://yoursite.com/2018/12/13/jsonp/"/>
+    <id>http://yoursite.com/2018/12/13/jsonp/</id>
+    <published>2018-12-13T08:23:06.000Z</published>
+    <updated>2018-12-13T08:45:38.052Z</updated>
+    
+    <summary type="html">
+    
+      AJAX 访问接口跨域解决方案
+    
+    </summary>
+    
+      <category term="跨域" scheme="http://yoursite.com/categories/%E8%B7%A8%E5%9F%9F/"/>
+    
+      <category term="jsonp实现一个类" scheme="http://yoursite.com/categories/%E8%B7%A8%E5%9F%9F/jsonp%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%B1%BB/"/>
+    
+    
+      <category term="jsonp" scheme="http://yoursite.com/tags/jsonp/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
